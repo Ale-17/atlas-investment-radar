@@ -1,0 +1,44 @@
+name: Update Atlas news radar
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "15 6,10,14,18,22 * * 1-5"
+    - cron: "15 9,15,21 * * 0,6"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: atlas-news-radar
+  cancel-in-progress: true
+
+jobs:
+  news:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Build 24h investment news feed
+        run: python src/news.py
+
+      - name: Commit feed
+        run: |
+          if git diff --quiet -- docs/data/news.json; then
+            echo "No news changes"
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add docs/data/news.json
+          git commit -m "Update Atlas news radar"
+          git pull --rebase origin main
+          git push

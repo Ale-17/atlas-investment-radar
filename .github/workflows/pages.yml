@@ -38,21 +38,18 @@ jobs:
           from pathlib import Path
           path = Path("_site/index.html")
           html = path.read_text(encoding="utf-8")
-
-          script_needle = '  <script src="app.js"></script>'
-          script_injection = script_needle + '\n  <script src="payday.js"></script>'
-          if 'src="payday.js"' not in html:
-              if script_needle not in html:
-                  raise SystemExit("app.js script tag not found")
-              html = html.replace(script_needle, script_injection, 1)
-
-          css_needle = '  <link rel="stylesheet" href="styles.css" />'
-          css_injection = css_needle + '\n  <link rel="stylesheet" href="payday-fix.css" />'
-          if 'href="payday-fix.css"' not in html:
-              if css_needle not in html:
-                  raise SystemExit("styles.css link not found")
-              html = html.replace(css_needle, css_injection, 1)
-
+          needle = '  <script src="app.js"></script>'
+          scripts = needle + '\n  <script src="payday.js"></script>\n  <script src="news.js"></script>'
+          if needle not in html:
+              raise SystemExit("app.js script tag not found")
+          if 'src="payday.js"' not in html and 'src="news.js"' not in html:
+              html = html.replace(needle, scripts, 1)
+          else:
+              if 'src="payday.js"' not in html:
+                  html = html.replace(needle, needle + '\n  <script src="payday.js"></script>', 1)
+              if 'src="news.js"' not in html:
+                  anchor = '  <script src="payday.js"></script>'
+                  html = html.replace(anchor, anchor + '\n  <script src="news.js"></script>', 1)
           path.write_text(html, encoding="utf-8")
           PY
 

@@ -1,11 +1,11 @@
-const CACHE = "atlas-v5-payday-2";
+const CACHE = "atlas-v5-news-1";
 const STATIC = [
   "./",
   "./index.html",
   "./styles.css",
   "./app.js",
   "./payday.js",
-  "./payday-fix.css",
+  "./news.js",
   "./manifest.webmanifest",
   "./icons/icon-192.png",
   "./icons/icon-512.png"
@@ -26,7 +26,11 @@ self.addEventListener("activate", event => {
 self.addEventListener("fetch", event => {
   const url = new URL(event.request.url);
 
-  if(url.pathname.endsWith("/data/latest.json") || url.pathname.endsWith("/data/backtest.json")){
+  if(
+    url.pathname.endsWith("/data/latest.json") ||
+    url.pathname.endsWith("/data/backtest.json") ||
+    url.pathname.endsWith("/data/news.json")
+  ){
     event.respondWith(
       fetch(event.request)
         .then(response => {

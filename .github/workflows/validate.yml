@@ -38,5 +38,13 @@ jobs:
           test -f docs/index.html
           test -f docs/styles.css
           test -f docs/app.js
+          test -f docs/payday.js
+          test -f docs/news.js
+          test -f docs/data/news.json
           test -f docs/manifest.webmanifest
           test -f docs/sw.js
+      - name: JavaScript syntax
+        run: |
+          node --check docs/app.js
+          node --check docs/payday.js
+          node --check docs/news.js
