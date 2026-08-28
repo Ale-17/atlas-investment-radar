@@ -1,0 +1,64 @@
+{
+  "assets": [
+    {
+      "symbol": "BTC-USD",
+      "name": "Bitcoin",
+      "type": "crypto",
+      "max_model_weight": 0.35
+    },
+    {
+      "symbol": "^NDX",
+      "name": "Nasdaq 100",
+      "type": "index_proxy",
+      "max_model_weight": 0.35
+    },
+    {
+      "symbol": "^GSPC",
+      "name": "S&P 500",
+      "type": "index_proxy",
+      "max_model_weight": 0.35
+    },
+    {
+      "symbol": "URTH",
+      "name": "MSCI World proxy",
+      "type": "index_proxy",
+      "max_model_weight": 0.45
+    },
+    {
+      "symbol": "NVDA",
+      "name": "NVIDIA",
+      "type": "stock",
+      "max_model_weight": 0.15
+    },
+    {
+      "symbol": "MSFT",
+      "name": "Microsoft",
+      "type": "stock",
+      "max_model_weight": 0.15
+    },
+    {
+      "symbol": "GOOGL",
+      "name": "Alphabet",
+      "type": "stock",
+      "max_model_weight": 0.15
+    },
+    {
+      "symbol": "AMZN",
+      "name": "Amazon",
+      "type": "stock",
+      "max_model_weight": 0.15
+    },
+    {
+      "symbol": "META",
+      "name": "Meta",
+      "type": "stock",
+      "max_model_weight": 0.15
+    },
+    {
+      "symbol": "AVGO",
+      "name": "Broadcom",
+      "type": "stock",
+      "max_model_weight": 0.15
+    }
+  ]
+}
