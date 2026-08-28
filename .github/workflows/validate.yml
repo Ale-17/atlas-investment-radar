@@ -18,12 +18,15 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+
       - name: Set up Python
         uses: actions/setup-python@v5
         with:
           python-version: "3.12"
+
       - name: Python syntax
         run: python -m compileall -q src
+
       - name: Check JSON files
         run: |
           python - <<'PY'
@@ -33,16 +36,26 @@ jobs:
               json.loads(p.read_text(encoding="utf-8"))
               print("OK", p)
           PY
+
       - name: Check required web files
         run: |
           test -f docs/index.html
           test -f docs/styles.css
+          test -f docs/payday-fix.css
           test -f docs/app.js
           test -f docs/payday.js
           test -f docs/news.js
           test -f docs/data/news.json
           test -f docs/manifest.webmanifest
           test -f docs/sw.js
+
+      - name: Guard Payday visibility fix
+        run: |
+          grep -F '.payday-backdrop[hidden]' docs/payday-fix.css
+          grep -F 'display: none !important' docs/payday-fix.css
+          grep -F '"./payday-fix.css"' docs/sw.js
+          grep -F 'payday-fix.css' .github/workflows/pages.yml
+
       - name: JavaScript syntax
         run: |
           node --check docs/app.js
