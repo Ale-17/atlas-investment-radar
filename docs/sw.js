@@ -1,9 +1,10 @@
-const CACHE = "atlas-v4-shell";
+const CACHE = "atlas-v5-payday-1";
 const STATIC = [
   "./",
   "./index.html",
   "./styles.css",
   "./app.js",
+  "./payday.js",
   "./manifest.webmanifest",
   "./icons/icon-192.png",
   "./icons/icon-512.png"
