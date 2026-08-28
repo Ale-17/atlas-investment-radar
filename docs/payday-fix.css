@@ -1,0 +1,59 @@
+/* Atlas Payday mobile/visibility hotfix */
+
+/* The HTML hidden attribute must always win over the modal layout rules. */
+.payday-backdrop[hidden] {
+  display: none !important;
+  visibility: hidden !important;
+  pointer-events: none !important;
+}
+
+.payday-backdrop:not([hidden]) {
+  display: grid !important;
+  visibility: visible;
+  pointer-events: auto;
+}
+
+.payday-modal {
+  overscroll-behavior: contain;
+  scrollbar-gutter: stable;
+}
+
+.payday-close {
+  min-width: 44px;
+  width: 44px;
+  height: 44px;
+  flex: 0 0 44px;
+  touch-action: manipulation;
+  -webkit-tap-highlight-color: transparent;
+}
+
+@media (max-width: 680px) {
+  .payday-backdrop:not([hidden]) {
+    display: flex !important;
+    align-items: flex-end;
+    justify-content: center;
+    padding: max(8px, env(safe-area-inset-top)) 0 0;
+  }
+
+  .payday-modal {
+    width: 100%;
+    max-height: calc(100dvh - max(8px, env(safe-area-inset-top)));
+    overflow-y: auto;
+    overflow-x: hidden;
+    -webkit-overflow-scrolling: touch;
+    border-radius: 24px 24px 0 0;
+  }
+
+  .payday-head {
+    padding-top: 16px;
+  }
+
+  .payday-body {
+    padding-bottom: max(28px, env(safe-area-inset-bottom));
+  }
+
+  .payday-actions {
+    bottom: calc(-1 * max(28px, env(safe-area-inset-bottom)));
+    padding-bottom: max(8px, env(safe-area-inset-bottom));
+  }
+}
