@@ -3,7 +3,6 @@ name: Bootstrap Atlas V5
 on:
   push:
     paths:
-      - "_bootstrap/**"
       - ".github/workflows/bootstrap-v5.yml"
   workflow_dispatch:
 
@@ -41,8 +40,15 @@ jobs:
           test "$(wc -c < /tmp/atlas-v5.zip)" -eq 49350
           unzip -t /tmp/atlas-v5.zip
           unzip -o /tmp/atlas-v5.zip -d .
-          rm -rf _bootstrap
-          rm -f .github/workflows/bootstrap-v5.yml
+
+      - name: Keep repository workflows unchanged
+        run: |
+          git restore --source=HEAD -- \
+            .github/workflows/backtest.yml \
+            .github/workflows/validate.yml \
+            .github/workflows/pages.yml \
+            .github/workflows/update-market.yml \
+            .github/workflows/bootstrap-v5.yml
 
       - name: Set up Python
         uses: actions/setup-python@v5
@@ -54,21 +60,30 @@ jobs:
         run: pip install -r requirements.txt
 
       - name: Generate first market snapshot
-        continue-on-error: true
         run: python src/run.py
 
       - name: Generate first backtest
-        continue-on-error: true
         run: python src/backtest.py
 
-      - name: Commit Atlas V5
+      - name: Commit Atlas V5 application
         run: |
           git config user.name "atlas-bootstrap"
           git config user.email "atlas-bootstrap@users.noreply.github.com"
-          git add -A
+          git add \
+            .gitignore \
+            README.md \
+            STRATEGY.md \
+            DECISION_ENGINE.md \
+            DEPLOYMENT.md \
+            GOALS_RULES.md \
+            PORTFOLIO_RULES.md \
+            BACKTEST_RULES.md \
+            BUDGET_RULES.md \
+            requirements.txt \
+            src config docs data
           if git diff --cached --quiet; then
-            echo "No changes to commit"
+            echo "No application changes to commit"
             exit 0
           fi
-          git commit -m "Install Atlas V5"
+          git commit -m "Install Atlas V5 application"
           git push
