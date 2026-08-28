@@ -1,0 +1,57 @@
+name: Bootstrap Atlas V5
+
+on:
+  push:
+    paths:
+      - "_bootstrap/atlas-v5.zip"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+env:
+  PYTHONUNBUFFERED: "1"
+
+jobs:
+  install:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Install Atlas V5 package
+        run: |
+          unzip -o _bootstrap/atlas-v5.zip -d .
+          rm -rf _bootstrap
+          rm -f .github/workflows/bootstrap-v5.yml
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Generate first market snapshot
+        continue-on-error: true
+        run: python src/run.py
+
+      - name: Generate first backtest
+        continue-on-error: true
+        run: python src/backtest.py
+
+      - name: Commit Atlas V5
+        run: |
+          git config user.name "atlas-bootstrap"
+          git config user.email "atlas-bootstrap@users.noreply.github.com"
+          git add -A
+          if git diff --cached --quiet; then
+            echo "No changes to commit"
+            exit 0
+          fi
+          git commit -m "Install Atlas V5"
+          git push
