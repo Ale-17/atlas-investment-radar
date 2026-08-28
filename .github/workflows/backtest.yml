@@ -1,0 +1,41 @@
+name: Backtest investment signals
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "25 6 1 * *"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: investment-backtest
+  cancel-in-progress: true
+
+jobs:
+  backtest:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+      - name: Run historical validation
+        run: python src/backtest.py
+      - name: Commit backtest
+        run: |
+          git config user.name "investment-bot"
+          git config user.email "investment-bot@users.noreply.github.com"
+          git add docs/data/backtest.json
+          if git diff --cached --quiet; then
+            echo "No changes"
+            exit 0
+          fi
+          git commit -m "Update investment backtest"
+          git push
