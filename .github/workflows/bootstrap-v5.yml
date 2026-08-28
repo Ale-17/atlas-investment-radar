@@ -3,7 +3,7 @@ name: Bootstrap Atlas V5
 on:
   push:
     paths:
-      - "_bootstrap/part-*"
+      - "_bootstrap/b64-*"
       - ".github/workflows/bootstrap-v5.yml"
   workflow_dispatch:
 
@@ -24,7 +24,8 @@ jobs:
 
       - name: Reassemble and validate Atlas V5 package
         run: |
-          cat _bootstrap/part-* > /tmp/atlas-v5.zip
+          cat _bootstrap/b64-* | base64 -d > /tmp/atlas-v5.zip
+          test "$(wc -c < /tmp/atlas-v5.zip)" -eq 49350
           unzip -t /tmp/atlas-v5.zip
           unzip -o /tmp/atlas-v5.zip -d .
           rm -rf _bootstrap
