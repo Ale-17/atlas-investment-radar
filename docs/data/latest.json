@@ -1,0 +1,9 @@
+{
+  "generated_at": null,
+  "strategy": "aggressive-v1",
+  "risk_on": null,
+  "regime": {},
+  "assets": [],
+  "errors": [],
+  "status": "Run python src/run.py to generate market data"
+}
