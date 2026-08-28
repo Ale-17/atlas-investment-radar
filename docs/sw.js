@@ -1,8 +1,9 @@
-const CACHE = "atlas-v5-news-1";
+const CACHE = "atlas-v5-news-payday-fix-2";
 const STATIC = [
   "./",
   "./index.html",
   "./styles.css",
+  "./payday-fix.css",
   "./app.js",
   "./payday.js",
   "./news.js",
