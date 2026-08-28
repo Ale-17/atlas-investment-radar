@@ -22,7 +22,14 @@ def load_assets() -> list[dict]:
 
 
 def fetch_close(symbol: str, period: str = "7y") -> pd.Series:
-    df = yf.download(symbol, period=period, interval="1d", auto_adjust=True, progress=False, threads=False)
+    df = yf.download(
+        symbol,
+        period=period,
+        interval="1d",
+        auto_adjust=True,
+        progress=False,
+        threads=False,
+    )
     if df.empty:
         raise RuntimeError(f"No historical data for {symbol}")
     close = df["Close"]
@@ -65,9 +72,13 @@ def regime_at(date: pd.Timestamp, regimes: dict[str, pd.Series]) -> bool:
 def run_asset(asset: dict, close: pd.Series, regimes: dict[str, pd.Series]) -> dict:
     if len(close) < 280:
         raise RuntimeError("Insufficient history")
+
+    # Work only on dates for which the regime series can also be queried.
     close = close.sort_index()
     rebalance_positions = pd.Series(index=close.index, dtype=float)
     scores = {}
+
+    # Approximate one trading week. Every score only uses information available up to that date.
     for i in range(252, len(close), 5):
         date = close.index[i]
         hist = close.iloc[: i + 1]
@@ -76,23 +87,36 @@ def run_asset(asset: dict, close: pd.Series, regimes: dict[str, pd.Series]) -> d
         score, _ = score_asset(metrics, risk_on=risk_on)
         scores[str(date.date())] = int(score)
         rebalance_positions.iloc[i] = 1.0 if score >= 60 else 0.0
+
     position = rebalance_positions.ffill().fillna(0.0)
     start_idx = position.ne(0).idxmax() if position.ne(0).any() else close.index[252]
     close_bt = close.loc[start_idx:]
     position_bt = position.loc[start_idx:]
+
     daily_ret = close_bt.pct_change().fillna(0.0)
+    # Today's signal is applied from the next session, avoiding look-ahead.
     strategy_ret = daily_ret * position_bt.shift(1).fillna(0.0)
+
     strategy_eq = (1 + strategy_ret).cumprod()
     buyhold_eq = (1 + daily_ret).cumprod()
+
     switches = int(position_bt.diff().abs().fillna(0).sum())
     latest_score = list(scores.values())[-1] if scores else None
+
     return {
-        "symbol": asset["symbol"], "name": asset["name"], "type": asset["type"],
-        "start_date": str(close_bt.index[0].date()), "end_date": str(close_bt.index[-1].date()),
-        "atlas_return": float(strategy_eq.iloc[-1] - 1), "buyhold_return": float(buyhold_eq.iloc[-1] - 1),
-        "atlas_cagr": cagr(strategy_eq), "buyhold_cagr": cagr(buyhold_eq),
-        "atlas_max_drawdown": max_drawdown(strategy_eq), "buyhold_max_drawdown": max_drawdown(buyhold_eq),
-        "time_in_market": float(position_bt.mean()), "switches": switches,
+        "symbol": asset["symbol"],
+        "name": asset["name"],
+        "type": asset["type"],
+        "start_date": str(close_bt.index[0].date()),
+        "end_date": str(close_bt.index[-1].date()),
+        "atlas_return": float(strategy_eq.iloc[-1] - 1),
+        "buyhold_return": float(buyhold_eq.iloc[-1] - 1),
+        "atlas_cagr": cagr(strategy_eq),
+        "buyhold_cagr": cagr(buyhold_eq),
+        "atlas_max_drawdown": max_drawdown(strategy_eq),
+        "buyhold_max_drawdown": max_drawdown(buyhold_eq),
+        "time_in_market": float(position_bt.mean()),
+        "switches": switches,
         "latest_historical_score": latest_score,
     }
 
@@ -101,8 +125,10 @@ def main():
     assets = load_assets()
     cache: dict[str, pd.Series] = {}
     errors = []
+
     for symbol in ("^GSPC", "^NDX"):
         cache[symbol] = fetch_close(symbol)
+
     results = []
     for asset in assets:
         try:
@@ -114,16 +140,30 @@ def main():
             results.append(run_asset(asset, close, cache))
         except Exception as exc:
             errors.append({"symbol": asset["symbol"], "error": str(exc)})
+
+    # Rank by risk-adjusted usefulness: return edge plus drawdown improvement.
     for r in results:
         r["return_edge"] = r["atlas_return"] - r["buyhold_return"]
         r["drawdown_improvement"] = r["atlas_max_drawdown"] - r["buyhold_max_drawdown"]
-        r["validation_score"] = r["return_edge"] * 0.6 + r["drawdown_improvement"] * 0.4
+        r["validation_score"] = (
+            r["return_edge"] * 0.6 + r["drawdown_improvement"] * 0.4
+        )
+
     results.sort(key=lambda x: x["validation_score"], reverse=True)
+
     payload = {
         "generated_at": datetime.now(timezone.utc).isoformat(),
-        "method": {"name": "weekly-score-v1", "threshold": 60, "rebalance_sessions": 5, "history_period": "7y", "notes": "Signal applied from next trading session. No taxes, spreads or cash yield."},
-        "assets": results, "errors": errors,
+        "method": {
+            "name": "weekly-score-v1",
+            "threshold": 60,
+            "rebalance_sessions": 5,
+            "history_period": "7y",
+            "notes": "Signal applied from next trading session. No taxes, spreads or cash yield.",
+        },
+        "assets": results,
+        "errors": errors,
     }
+
     out = ROOT / "docs/data/backtest.json"
     out.parent.mkdir(parents=True, exist_ok=True)
     out.write_text(json.dumps(payload, indent=2, ensure_ascii=False), encoding="utf-8")

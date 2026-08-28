@@ -1,0 +1,787 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover" />
+  <meta name="theme-color" content="#08111f" />
+  <meta name="color-scheme" content="dark" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+  <meta name="apple-mobile-web-app-title" content="Atlas" />
+  <link rel="manifest" href="manifest.webmanifest" />
+  <link rel="icon" href="icons/icon-192.png" />
+  <link rel="apple-touch-icon" href="icons/icon-192.png" />
+  <title>Atlas V5 — Personal Finance & Investment Radar</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="ambient ambient-a"></div>
+  <div class="ambient ambient-b"></div>
+
+  <nav class="topbar">
+    <a class="brand" href="#inicio" aria-label="Atlas">
+      <span class="brand-mark">A</span>
+      <span>
+        <strong>Atlas</strong>
+        <small>Personal finance lab</small>
+      </span>
+    </a>
+    <div class="nav-links">
+      <a href="#presupuesto">Presupuesto</a>
+      <a href="#cartera">Cartera</a>
+      <a href="#objetivos">Objetivos</a>
+      <a href="#inversion">Inversión</a>
+      <a href="#radar">Radar</a>
+      <a href="#lab">Lab</a>
+    </div>
+    <button class="install-btn" id="installApp" hidden>Instalar</button>
+    <div class="market-pill" id="regime">
+      <span class="pulse"></span>
+      Cargando mercado
+    </div>
+  </nav>
+
+  <main class="shell" id="inicio">
+    <section class="hero">
+      <div class="hero-copy">
+        <div class="eyebrow">TU DINERO, CON UN PLAN</div>
+        <h1>Decide qué hacer con cada euro <span>antes de gastarlo.</span></h1>
+        <p>
+          Introduce lo que cobras y tus gastos del mes. Atlas calcula tu dinero libre,
+          propone un reparto y usa el radar de mercado para distribuir únicamente la parte destinada a inversión.
+        </p>
+        <div class="hero-actions">
+          <a class="btn primary" href="#presupuesto">Planificar este mes</a>
+          <a class="btn ghost" href="#radar">Ver oportunidades</a>
+        </div>
+        <div class="privacy-note">
+          <span class="lock-dot">●</span>
+          Tus ingresos, gastos y posiciones se guardan solo en este dispositivo.
+        </div>
+      </div>
+
+      <aside class="hero-console glass">
+        <div class="console-head">
+          <div>
+            <small>PLAN DEL MES</small>
+            <strong id="heroMonth">—</strong>
+          </div>
+          <span class="status-badge">LOCAL ONLY</span>
+        </div>
+
+        <div class="hero-number">
+          <span>Dinero libre estimado</span>
+          <strong id="heroFree">0 €</strong>
+        </div>
+
+        <div class="flow-bar" id="heroFlow">
+          <span style="width:25%"></span>
+          <span style="width:25%"></span>
+          <span style="width:25%"></span>
+          <span style="width:25%"></span>
+        </div>
+
+        <div class="hero-mini-grid">
+          <div>
+            <small>Invertir</small>
+            <strong id="heroInvest">0 €</strong>
+          </div>
+          <div>
+            <small>Ocio</small>
+            <strong id="heroLeisure">0 €</strong>
+          </div>
+          <div>
+            <small>Objetivos</small>
+            <strong id="heroGoals">0 €</strong>
+          </div>
+          <div>
+            <small>Reserva</small>
+            <strong id="heroReserve">0 €</strong>
+          </div>
+        </div>
+      </aside>
+    </section>
+
+    <section class="kpi-grid">
+      <article class="kpi glass">
+        <span class="kpi-icon">↗</span>
+        <div>
+          <small>Tasa de ahorro/inversión</small>
+          <strong id="savingRate">0%</strong>
+        </div>
+        <span class="kpi-foot">del ingreso neto</span>
+      </article>
+      <article class="kpi glass">
+        <span class="kpi-icon">⌂</span>
+        <div>
+          <small>Coste de vivienda</small>
+          <strong id="housingRate">0%</strong>
+        </div>
+        <span class="kpi-foot" id="housingHint">sin datos</span>
+      </article>
+      <article class="kpi glass">
+        <span class="kpi-icon">◎</span>
+        <div>
+          <small>Colchón objetivo</small>
+          <strong id="bufferMonthsKpi">3 meses</strong>
+        </div>
+        <span class="kpi-foot" id="bufferHint">configurable</span>
+      </article>
+      <article class="kpi glass">
+        <span class="kpi-icon">◈</span>
+        <div>
+          <small>Cartera registrada</small>
+          <strong id="portfolioKpi">0 €</strong>
+        </div>
+        <span class="kpi-foot" id="portfolioKpiHint">sin posiciones</span>
+      </article>
+      <article class="kpi glass">
+        <span class="kpi-icon">◆</span>
+        <div>
+          <small>Mejor señal</small>
+          <strong id="bestSignal">—</strong>
+        </div>
+        <span class="kpi-foot" id="bestSignalScore">esperando mercado</span>
+      </article>
+    </section>
+
+
+    <section class="decision-center glass">
+      <div class="panel-head">
+        <div>
+          <div class="eyebrow">DECISION CENTER</div>
+          <h3>Qué haría Atlas este mes</h3>
+          <p>Acciones priorizadas a partir de presupuesto, deuda, objetivos, cartera y mercado.</p>
+        </div>
+        <span class="status-badge" id="decisionStatus">SIN DATOS</span>
+      </div>
+      <div id="decisionActions" class="decision-actions">
+        <div class="decision-empty">Añade tus ingresos y gastos para generar el plan de acción.</div>
+      </div>
+    </section>
+
+
+    <section class="section" id="presupuesto">
+      <div class="section-heading">
+        <div>
+          <div class="eyebrow">01 · PRESUPUESTO</div>
+          <h2>¿Qué hago con mi nómina este mes?</h2>
+        </div>
+        <div class="section-actions">
+          <button class="btn ghost small" id="saveMonth">Guardar mes</button>
+          <button class="btn ghost small" id="clearMonth">Limpiar</button>
+        </div>
+      </div>
+
+      <div class="budget-layout">
+        <article class="glass input-panel">
+          <div class="panel-head">
+            <div>
+              <h3>Datos del mes</h3>
+              <p>Rellena solo lo que aplique. Puedes actualizarlo cada vez que cobres.</p>
+            </div>
+            <span class="save-state" id="saveState">Guardado local</span>
+          </div>
+
+          <div class="form-grid">
+            <label class="money-field">
+              <span>Ingresos netos</span>
+              <div class="money-input"><b>€</b><input id="income" type="number" min="0" step="10" placeholder="0"></div>
+            </label>
+            <label class="money-field">
+              <span>Alquiler / hipoteca</span>
+              <div class="money-input"><b>€</b><input id="housing" type="number" min="0" step="10" placeholder="0"></div>
+            </label>
+            <label class="money-field">
+              <span>Gastos fijos</span>
+              <div class="money-input"><b>€</b><input id="fixed" type="number" min="0" step="10" placeholder="0"></div>
+            </label>
+            <label class="money-field">
+              <span>Gastos esenciales variables</span>
+              <div class="money-input"><b>€</b><input id="essentials" type="number" min="0" step="10" placeholder="0"></div>
+            </label>
+            <label class="money-field">
+              <span>Cuotas / deuda del mes</span>
+              <div class="money-input"><b>€</b><input id="debt" type="number" min="0" step="10" placeholder="0"></div>
+            </label>
+            <label class="money-field">
+              <span>Colchón líquido actual</span>
+              <div class="money-input"><b>€</b><input id="cashBuffer" type="number" min="0" step="50" placeholder="0"></div>
+            </label>
+          </div>
+
+          <div class="sliders">
+            <label class="slider-field">
+              <div><span>Perfil de asignación</span><strong id="aggressionValue">Agresivo</strong></div>
+              <input id="aggression" type="range" min="45" max="85" step="5" value="70">
+              <div class="slider-scale"><span>Equilibrado</span><span>Muy agresivo</span></div>
+            </label>
+
+            <label class="slider-field">
+              <div><span>Colchón objetivo</span><strong><span id="bufferMonthsValue">3</span> meses</strong></div>
+              <input id="bufferMonths" type="range" min="1" max="6" step="1" value="3">
+              <div class="slider-scale"><span>1 mes</span><span>6 meses</span></div>
+            </label>
+          </div>
+
+          <button id="calculatePlan" class="btn primary full">Calcular mi plan del mes</button>
+          <p class="fineprint">Atlas aplica reglas configurables. No mueve dinero ni ejecuta órdenes.</p>
+        </article>
+
+        <article class="glass plan-panel">
+          <div class="panel-head">
+            <div>
+              <h3>Plan recomendado</h3>
+              <p id="planNarrative">Añade tus datos para generar una propuesta.</p>
+            </div>
+            <div class="plan-score" id="planScore">
+              <small>Margen</small><strong>—</strong>
+            </div>
+          </div>
+
+          <div class="money-map">
+            <div class="donut" id="budgetDonut">
+              <div>
+                <small>Libre</small>
+                <strong id="freeCash">0 €</strong>
+              </div>
+            </div>
+
+            <div class="legend" id="budgetLegend">
+              <div><span class="dot housing"></span><span>Vivienda</span><strong>0 €</strong></div>
+              <div><span class="dot fixed"></span><span>Fijos + esenciales</span><strong>0 €</strong></div>
+              <div><span class="dot invest"></span><span>Inversión</span><strong>0 €</strong></div>
+              <div><span class="dot leisure"></span><span>Ocio</span><strong>0 €</strong></div>
+              <div><span class="dot goals"></span><span>Objetivos</span><strong>0 €</strong></div>
+              <div><span class="dot reserve"></span><span>Reserva</span><strong>0 €</strong></div>
+            </div>
+          </div>
+
+          <div class="recommend-grid">
+            <div class="recommend-card invest-card">
+              <span>01</span>
+              <small>PARA INVERTIR</small>
+              <strong id="recommendedInvest">0 €</strong>
+              <p id="investReason">Se activará con tus datos.</p>
+            </div>
+            <div class="recommend-card leisure-card">
+              <span>02</span>
+              <small>PARA OCIO</small>
+              <strong id="recommendedLeisure">0 €</strong>
+              <p>Dinero que puedes gastar sin tocar el plan.</p>
+            </div>
+            <div class="recommend-card goal-card">
+              <span>03</span>
+              <small>PARA OBJETIVOS</small>
+              <strong id="recommendedGoals">0 €</strong>
+              <p id="goalReason">Ahorro dirigido a tus metas con fecha.</p>
+            </div>
+            <div class="recommend-card reserve-card">
+              <span>04</span>
+              <small>PARA RESERVA</small>
+              <strong id="recommendedReserve">0 €</strong>
+              <p id="reserveReason">Liquidez adicional para imprevistos y oportunidades.</p>
+            </div>
+          </div>
+        </article>
+      </div>
+
+      <article class="glass history-panel">
+        <div class="panel-head">
+          <div>
+            <h3>Histórico mensual</h3>
+            <p>Snapshots privados guardados en este navegador. Útil para ver cómo evoluciona tu capacidad de ahorro e inversión.</p>
+          </div>
+          <span class="status-badge" id="historyCount">0 meses</span>
+        </div>
+        <div id="monthHistory" class="month-history">
+          <div class="empty-state">Aún no has guardado ningún mes.</div>
+        </div>
+      </article>
+    </section>
+
+
+    
+      <div class="budget-detail-grid">
+        <article class="glass detail-panel">
+          <div class="panel-head">
+            <div>
+              <h3>Gastos fijos detallados</h3>
+              <p>Si añades conceptos aquí, Atlas usa su suma como “Gastos fijos” del presupuesto.</p>
+            </div>
+            <span class="status-badge" id="fixedItemsTotal">0 €</span>
+          </div>
+          <div class="inline-form four">
+            <div class="text-input"><input id="fixedItemName" type="text" placeholder="Ej. Gimnasio"></div>
+            <div class="select-input">
+              <select id="fixedItemCategory">
+                <option value="subscriptions">Suscripciones</option>
+                <option value="utilities">Suministros</option>
+                <option value="transport">Transporte</option>
+                <option value="insurance">Seguros</option>
+                <option value="health">Salud / deporte</option>
+                <option value="other">Otros</option>
+              </select>
+            </div>
+            <div class="money-input"><b>€</b><input id="fixedItemAmount" type="number" min="0" step="1" placeholder="Importe"></div>
+            <div class="day-input"><span>Día</span><input id="fixedItemDay" type="number" min="1" max="31" placeholder="1"></div>
+          </div>
+          <button class="btn ghost full" id="addFixedItem">Añadir gasto fijo</button>
+          <div id="fixedItemsList" class="compact-list">
+            <div class="empty-state">Sin gastos detallados.</div>
+          </div>
+        </article>
+
+        <article class="glass detail-panel">
+          <div class="panel-head">
+            <div>
+              <h3>Deudas y financiación</h3>
+              <p>Atlas diferencia cuota obligatoria de amortización extra recomendada.</p>
+            </div>
+            <span class="status-badge" id="debtTotal">0 € pendiente</span>
+          </div>
+          <div class="inline-form five">
+            <div class="text-input"><input id="debtName" type="text" placeholder="Ej. Préstamo"></div>
+            <div class="money-input"><b>€</b><input id="debtBalance" type="number" min="0" step="10" placeholder="Pendiente"></div>
+            <div class="money-input"><b>€</b><input id="debtPayment" type="number" min="0" step="1" placeholder="Cuota"></div>
+            <div class="percent-input"><input id="debtApr" type="number" min="0" step="0.1" placeholder="TAE"><b>%</b></div>
+            <div class="select-input">
+              <select id="debtPriority">
+                <option value="normal">Normal</option>
+                <option value="urgent">Quiero liquidarla pronto</option>
+              </select>
+            </div>
+          </div>
+          <button class="btn ghost full" id="addDebtItem">Añadir deuda</button>
+          <div id="debtItemsList" class="compact-list">
+            <div class="empty-state">Sin deudas detalladas.</div>
+          </div>
+        </article>
+      </div>
+
+
+    <section class="section" id="cartera">
+      <div class="section-heading">
+        <div>
+          <div class="eyebrow">02 · CARTERA</div>
+          <h2>Lo que ya tienes cambia lo que deberías comprar</h2>
+        </div>
+        <span class="section-note">Las posiciones se guardan solo en este dispositivo.</span>
+      </div>
+
+      <div class="portfolio-kpis">
+        <article class="glass mini-stat">
+          <small>VALOR ACTUAL</small>
+          <strong id="portfolioValue">0 €</strong>
+          <span id="portfolioCount">0 posiciones</span>
+        </article>
+        <article class="glass mini-stat">
+          <small>RESULTADO</small>
+          <strong id="portfolioPnl">—</strong>
+          <span id="portfolioPnlPct">sin coste registrado</span>
+        </article>
+        <article class="glass mini-stat">
+          <small>MAYOR POSICIÓN</small>
+          <strong id="portfolioConcentration">0%</strong>
+          <span id="portfolioLargest">sin posiciones</span>
+        </article>
+        <article class="glass mini-stat">
+          <small>EXPOSICIÓN CRIPTO</small>
+          <strong id="portfolioCrypto">0%</strong>
+          <span id="portfolioCryptoHint">del total</span>
+        </article>
+      </div>
+
+      <div class="portfolio-layout">
+        <article class="glass input-panel">
+          <div class="panel-head">
+            <div>
+              <h3>Añadir posición</h3>
+              <p>No necesitamos credenciales de MyInvestor o Trade Republic. Introduces valor y coste manualmente.</p>
+            </div>
+            <span class="status-badge">PRIVADO</span>
+          </div>
+
+          <div class="form-grid portfolio-form">
+            <label class="money-field">
+              <span>Nombre</span>
+              <div class="text-input"><input id="holdingName" type="text" placeholder="Ej. MSCI World"></div>
+            </label>
+            <label class="money-field">
+              <span>Broker</span>
+              <div class="select-input">
+                <select id="holdingBroker">
+                  <option>MyInvestor</option>
+                  <option>Trade Republic</option>
+                  <option>Otro</option>
+                </select>
+              </div>
+            </label>
+            <label class="money-field">
+              <span>Tipo</span>
+              <div class="select-input">
+                <select id="holdingType">
+                  <option value="index_proxy">Fondo / ETF diversificado</option>
+                  <option value="stock">Acción</option>
+                  <option value="crypto">Cripto</option>
+                  <option value="cash">Efectivo / monetario</option>
+                  <option value="other">Otro</option>
+                </select>
+              </div>
+            </label>
+            <label class="money-field">
+              <span>Señal de referencia</span>
+              <div class="select-input">
+                <select id="holdingProxy">
+                  <option value="">Sin señal / otro</option>
+                  <option value="BTC-USD">Bitcoin</option>
+                  <option value="URTH">MSCI World proxy</option>
+                  <option value="^NDX">Nasdaq 100</option>
+                  <option value="^GSPC">S&amp;P 500</option>
+                  <option value="NVDA">NVIDIA</option>
+                  <option value="MSFT">Microsoft</option>
+                  <option value="GOOGL">Alphabet</option>
+                  <option value="AMZN">Amazon</option>
+                  <option value="META">Meta</option>
+                  <option value="AVGO">Broadcom</option>
+                </select>
+              </div>
+            </label>
+            <label class="money-field">
+              <span>Valor actual</span>
+              <div class="money-input"><b>€</b><input id="holdingValue" type="number" min="0" step="10" placeholder="0"></div>
+            </label>
+            <label class="money-field">
+              <span>Coste total invertido</span>
+              <div class="money-input"><b>€</b><input id="holdingCost" type="number" min="0" step="10" placeholder="Opcional"></div>
+            </label>
+          </div>
+          <button class="btn primary full" id="addHolding">Añadir a cartera</button>
+        </article>
+
+        <article class="glass portfolio-visual">
+          <div class="panel-head">
+            <div>
+              <h3>Exposición actual</h3>
+              <p>El asignador usa esta distribución para evitar sobreconcentración.</p>
+            </div>
+          </div>
+          <div class="portfolio-chart-wrap">
+            <div class="donut portfolio-donut" id="portfolioDonut">
+              <div>
+                <small>Total</small>
+                <strong id="portfolioDonutTotal">0 €</strong>
+              </div>
+            </div>
+            <div id="portfolioExposureLegend" class="legend">
+              <div><span class="dot invest"></span><span>Sin posiciones</span><strong>—</strong></div>
+            </div>
+          </div>
+        </article>
+      </div>
+
+      <article class="glass holdings-panel">
+        <div class="panel-head">
+          <div>
+            <h3>Posiciones</h3>
+            <p>El “proxy” conecta tu producto real con la señal pública que usa el radar.</p>
+          </div>
+          <div class="panel-actions">
+            <button class="btn ghost small" id="importData">Importar</button>
+            <button class="btn ghost small" id="exportData">Exportar copia</button>
+            <input id="importDataFile" type="file" accept="application/json,.json" hidden>
+          </div>
+        </div>
+        <div id="holdingsList" class="holdings-list">
+          <div class="empty-state">Añade tu primera posición para que Atlas ajuste las compras nuevas a tu exposición real.</div>
+        </div>
+      </article>
+    </section>
+
+    <section class="section" id="objetivos">
+      <div class="section-heading">
+        <div>
+          <div class="eyebrow">03 · OBJETIVOS</div>
+          <h2>Ahorra para cosas concretas sin frenar toda la inversión</h2>
+        </div>
+        <span class="section-note">Atlas calcula cuánto exige cada objetivo al mes.</span>
+      </div>
+
+      <div class="goals-layout">
+        <article class="glass input-panel">
+          <div class="panel-head">
+            <div>
+              <h3>Nuevo objetivo</h3>
+              <p>Ej. entrada de vivienda, viaje, coche o una compra grande.</p>
+            </div>
+          </div>
+          <div class="form-grid">
+            <label class="money-field">
+              <span>Nombre</span>
+              <div class="text-input"><input id="goalName" type="text" placeholder="Ej. Entrada vivienda"></div>
+            </label>
+            <label class="money-field">
+              <span>Fecha objetivo</span>
+              <div class="text-input"><input id="goalDate" type="date"></div>
+            </label>
+            <label class="money-field">
+              <span>Importe objetivo</span>
+              <div class="money-input"><b>€</b><input id="goalTarget" type="number" min="0" step="100" placeholder="0"></div>
+            </label>
+            <label class="money-field">
+              <span>Ya ahorrado</span>
+              <div class="money-input"><b>€</b><input id="goalCurrent" type="number" min="0" step="100" placeholder="0"></div>
+            </label>
+            <label class="money-field full-field">
+              <span>Prioridad</span>
+              <div class="select-input">
+                <select id="goalPriority">
+                  <option value="3">Alta — quiero proteger esta meta</option>
+                  <option value="2" selected>Media — importante pero flexible</option>
+                  <option value="1">Baja — puede esperar</option>
+                </select>
+              </div>
+            </label>
+          </div>
+          <button class="btn primary full" id="addGoal">Añadir objetivo</button>
+        </article>
+
+        <article class="glass goals-summary">
+          <div class="panel-head">
+            <div>
+              <h3>Demanda mensual</h3>
+              <p>Cuánto tendrías que reservar al mes si quisieras cumplir todos los objetivos en fecha.</p>
+            </div>
+          </div>
+          <div class="goal-big-number">
+            <small>NECESIDAD TEÓRICA</small>
+            <strong id="goalMonthlyNeed">0 € / mes</strong>
+            <span id="goalMonthlyHint">sin objetivos activos</span>
+          </div>
+          <div class="goal-rule">
+            Atlas no deja que los objetivos absorban automáticamente todo tu dinero libre:
+            ajusta la aportación según colchón, prioridad y perfil.
+          </div>
+        </article>
+      </div>
+
+      <div id="goalsList" class="goals-list">
+        <div class="empty-state">No hay objetivos guardados.</div>
+      </div>
+    </section>
+
+
+    <section class="section compact-section" id="stress">
+      <div class="section-heading">
+        <div>
+          <div class="eyebrow">04 · STRESS TEST</div>
+          <h2>¿Qué pasa si el mes viene peor?</h2>
+        </div>
+        <span class="section-note">Simulación local, sin mover ninguna cantidad real.</span>
+      </div>
+
+      <div class="stress-grid">
+        <article class="glass stress-card">
+          <small>INGRESOS -20%</small>
+          <strong id="stressIncomeFree">0 € libres</strong>
+          <span id="stressIncomeHint">añade ingresos para simular</span>
+        </article>
+        <article class="glass stress-card">
+          <small>GASTO IMPREVISTO +500 €</small>
+          <strong id="stressShockFree">0 € libres</strong>
+          <span id="stressShockHint">impacto en el plan mensual</span>
+        </article>
+        <article class="glass stress-card">
+          <small>MESES DE COLCHÓN</small>
+          <strong id="stressBuffer">0.0</strong>
+          <span id="stressBufferHint">cobertura actual</span>
+        </article>
+        <article class="glass stress-card">
+          <small>SEMÁFORO FINANCIERO</small>
+          <strong id="stressStatus">—</strong>
+          <span id="stressStatusHint">sin datos</span>
+        </article>
+      </div>
+    </section>
+
+
+    <section class="section" id="inversion">
+      <div class="section-heading">
+        <div>
+          <div class="eyebrow">05 · INVERSIÓN</div>
+          <h2>Cómo repartir la parte que sí vas a invertir</h2>
+        </div>
+        <span class="section-note">Usa el presupuesto generado arriba o escribe otro importe.</span>
+      </div>
+
+      <div class="investment-layout">
+        <article class="glass allocation-panel">
+          <div class="panel-head">
+            <div>
+              <h3>Asignador de capital</h3>
+              <p>Prioriza las mejores señales y respeta límites de concentración.</p>
+            </div>
+          </div>
+
+          <div class="budget-row">
+            <div class="money-input big">
+              <b>€</b>
+              <input id="investmentBudget" type="number" min="0" step="10" placeholder="Presupuesto de inversión">
+            </div>
+            <button id="useRecommended" class="btn ghost">Usar recomendado</button>
+          </div>
+
+          <div id="allocation" class="allocation">
+            <div class="empty-state">El radar necesita datos de mercado y un presupuesto.</div>
+          </div>
+        </article>
+
+        <article class="glass controls-panel">
+          <div class="panel-head">
+            <div>
+              <h3>Límites del modelo</h3>
+              <p>Evitan que una señal fuerte concentre demasiado una aportación.</p>
+            </div>
+          </div>
+          <label class="slider-field compact">
+            <div><span>Máximo Bitcoin</span><strong id="btcCapValue">35%</strong></div>
+            <input id="btcCap" type="range" min="10" max="50" step="5">
+          </label>
+          <label class="slider-field compact">
+            <div><span>Máximo acción individual</span><strong id="stockCapValue">15%</strong></div>
+            <input id="stockCap" type="range" min="5" max="25" step="5">
+          </label>
+          <div class="risk-note" id="riskNote">
+            <span>◉</span>
+            <p>Cuando el mercado entra en <strong>risk-off</strong>, el plan mensual reduce ligeramente la parte agresiva y aumenta liquidez.</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section" id="radar">
+      <div class="section-heading">
+        <div>
+          <div class="eyebrow">06 · RADAR</div>
+          <h2>Oportunidades de mercado</h2>
+        </div>
+        <div id="updated" class="section-note">Esperando actualización…</div>
+      </div>
+
+      <div id="cards" class="cards">
+        <article class="skeleton-card"></article>
+        <article class="skeleton-card"></article>
+        <article class="skeleton-card"></article>
+      </div>
+
+      <article class="glass table-panel">
+        <div class="panel-head">
+          <div>
+            <h3>Ranking completo</h3>
+            <p>Score técnico orientado a detectar tendencia + corrección aprovechable.</p>
+          </div>
+          <span class="status-badge">0–100</span>
+        </div>
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr>
+                <th>Activo</th>
+                <th>Score</th>
+                <th>Señal</th>
+                <th>RSI</th>
+                <th>DD 52w</th>
+                <th>6 meses</th>
+                <th>12 meses</th>
+              </tr>
+            </thead>
+            <tbody id="ranking">
+              <tr><td colspan="7" class="loading-row">Cargando mercado…</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </article>
+    </section>
+
+    <section class="section" id="lab">
+      <div class="section-heading">
+        <div>
+          <div class="eyebrow">07 · STRATEGY LAB</div>
+          <h2>¿Las señales habrían aportado algo en el pasado?</h2>
+        </div>
+        <span class="section-note" id="backtestUpdated">Backtest pendiente de primera ejecución.</span>
+      </div>
+
+      <div class="lab-intro glass">
+        <div>
+          <small>BACKTEST V1</small>
+          <strong>Señal semanal vs. Buy &amp; Hold</strong>
+          <p>
+            El test usa el mismo motor técnico histórico. Si el score es ≥ 60 mantiene exposición;
+            por debajo, queda en liquidez. No incluye impuestos, spreads ni rentabilidad del efectivo.
+          </p>
+        </div>
+        <div class="lab-badges">
+          <span>Sin look-ahead</span>
+          <span>Ventana ≥ 200 sesiones</span>
+          <span>Rebalance semanal</span>
+        </div>
+      </div>
+
+      <div id="backtestCards" class="backtest-cards">
+        <article class="skeleton-card"></article>
+        <article class="skeleton-card"></article>
+        <article class="skeleton-card"></article>
+      </div>
+
+      <article class="glass table-panel">
+        <div class="panel-head">
+          <div>
+            <h3>Resultados históricos</h3>
+            <p>Sirve para detectar si el score reduce drawdown o simplemente pierde subidas.</p>
+          </div>
+          <span class="status-badge">VALIDACIÓN</span>
+        </div>
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr>
+                <th>Activo</th>
+                <th>Atlas</th>
+                <th>Buy &amp; Hold</th>
+                <th>Max DD Atlas</th>
+                <th>Max DD B&amp;H</th>
+                <th>Tiempo invertido</th>
+                <th>Cambios</th>
+              </tr>
+            </thead>
+            <tbody id="backtestTable">
+              <tr><td colspan="7" class="loading-row">Pendiente de primera ejecución del workflow de backtesting.</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </article>
+    </section>
+
+    <footer>
+      <div>
+        <strong>Atlas</strong>
+        <span>Planificación personal + radar cuantitativo.</span>
+      </div>
+      <p>La información es orientativa. Comprueba siempre el producto, costes, fiscalidad y riesgo antes de invertir.</p>
+    </footer>
+  </main>
+
+
+  <nav class="mobile-bottom-nav" aria-label="Navegación móvil">
+    <a href="#inicio"><span>⌂</span><small>Inicio</small></a>
+    <a href="#presupuesto"><span>€</span><small>Plan</small></a>
+    <a href="#cartera"><span>◈</span><small>Cartera</small></a>
+    <a href="#radar"><span>◆</span><small>Radar</small></a>
+    <a href="#lab"><span>⌁</span><small>Lab</small></a>
+  </nav>
+
+  <div class="toast" id="toast">Guardado</div>
+  <script src="app.js"></script>
+</body>
+</html>
