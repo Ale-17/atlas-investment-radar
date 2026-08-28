@@ -3,7 +3,8 @@ name: Bootstrap Atlas V5
 on:
   push:
     paths:
-      - "_bootstrap/atlas-v5.zip"
+      - "_bootstrap/part-*"
+      - ".github/workflows/bootstrap-v5.yml"
   workflow_dispatch:
 
 permissions:
@@ -21,9 +22,11 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Install Atlas V5 package
+      - name: Reassemble and validate Atlas V5 package
         run: |
-          unzip -o _bootstrap/atlas-v5.zip -d .
+          cat _bootstrap/part-* > /tmp/atlas-v5.zip
+          unzip -t /tmp/atlas-v5.zip
+          unzip -o /tmp/atlas-v5.zip -d .
           rm -rf _bootstrap
           rm -f .github/workflows/bootstrap-v5.yml
 
