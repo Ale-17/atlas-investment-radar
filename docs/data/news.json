@@ -1,9 +1,39 @@
 {
-  "generated_at": "2026-08-29T18:33:44.201065Z",
+  "generated_at": "2026-08-29T23:22:17.936799Z",
   "source": "GDELT DOC 2.0",
   "horizon_hours": 24,
-  "article_count": 33,
+  "article_count": 36,
   "articles": [
+    {
+      "title": "Peterson Institute Posen : It fine for the Fed not to give forward guidance , but a forecast is critical",
+      "url": "https://finance.yahoo.com/economy/article/peterson-institutes-posen-its-fine-for-the-fed-not-to-give-forward-guidance-but-a-forecast-is-critical-170758706.html",
+      "domain": "finance.yahoo.com",
+      "source_country": "United States",
+      "language": "English",
+      "published_at": "2026-08-29T17:45:00Z",
+      "category": "macro",
+      "assets": [],
+      "macro": [
+        "Fed"
+      ],
+      "relevance": 69,
+      "reason": "macro: Fed · incluye un catalizador relevante"
+    },
+    {
+      "title": "Nvidia Is Getting Bigger Without Getting Expensive",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/nvidia-getting-bigger-without-getting-153002917.html",
+      "domain": "finance.yahoo.com",
+      "source_country": "United States",
+      "language": "English",
+      "published_at": "2026-08-29T22:00:00Z",
+      "category": "stocks",
+      "assets": [
+        "NVDA"
+      ],
+      "macro": [],
+      "relevance": 65,
+      "reason": "activos: NVDA"
+    },
     {
       "title": "EXCLUSIVE : God Bless America ETF Exec Says Nvidia Wins No Matter Who Leads AI Race :  Pioneers Die With Arrows in Their Backs",
       "url": "https://finance.yahoo.com/technology/ai/articles/exclusive-god-bless-america-etf-094530579.html",
@@ -16,8 +46,57 @@
         "NVDA"
       ],
       "macro": [],
-      "relevance": 66,
+      "relevance": 64,
       "reason": "activos: NVDA · incluye un catalizador relevante"
+    },
+    {
+      "title": "US stocks drift lower after expectations rise for the Fed to hike rates to get handle on inflation",
+      "url": "https://www.ksl.com:443/article/51617205/us-stocks-drift-lower-after-expectations-rise-for-the-fed-to-hike-rates-to-get-handle-on-inflation",
+      "domain": "ksl.com",
+      "source_country": "United States",
+      "language": "English",
+      "published_at": "2026-08-28T23:45:00Z",
+      "category": "macro",
+      "assets": [
+        "^GSPC"
+      ],
+      "macro": [
+        "Fed",
+        "Inflación",
+        "Tipos"
+      ],
+      "relevance": 64,
+      "reason": "activos: ^GSPC · macro: Fed, Inflación, Tipos · incluye un catalizador relevante"
+    },
+    {
+      "title": "AST SpaceMobile ( NASDAQ : ASTS ) Stock Slides 15 . 5 % As Rate Hike Fears Grip Interest - Sensitive Growth Stocks",
+      "url": "https://www.foreignpolicyjournal.com/2026/08/29/ast-spacemobile-nasdaq-asts-stock-slides-15-5-as-rate-hike-fears-grip-interest-sensitive-growth-stocks/",
+      "domain": "foreignpolicyjournal.com",
+      "source_country": "Israel",
+      "language": "English",
+      "published_at": "2026-08-29T18:45:00Z",
+      "category": "macro",
+      "assets": [
+        "^NDX"
+      ],
+      "macro": [
+        "Tipos"
+      ],
+      "relevance": 63,
+      "reason": "activos: ^NDX · macro: Tipos · incluye un catalizador relevante"
+    },
+    {
+      "title": "Marvell Technology shares fall despite Q2 earnings beat and higher revenue outlook",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/marvell-technology-shares-fall-despite-101806855.html",
+      "domain": "finance.yahoo.com",
+      "source_country": "United States",
+      "language": "English",
+      "published_at": "2026-08-29T12:15:00Z",
+      "category": "markets",
+      "assets": [],
+      "macro": [],
+      "relevance": 62,
+      "reason": "incluye un catalizador relevante"
     },
     {
       "title": "Wall Street Week Ahead : Jobs report , Broadcom results pose next hurdles for stock market rally",
@@ -34,21 +113,24 @@
       "macro": [
         "Empleo"
       ],
-      "relevance": 65,
+      "relevance": 62,
       "reason": "activos: ^GSPC, AVGO · macro: Empleo · incluye un catalizador relevante"
     },
     {
-      "title": "Marvell Technology shares fall despite Q2 earnings beat and higher revenue outlook",
-      "url": "https://finance.yahoo.com/markets/stocks/articles/marvell-technology-shares-fall-despite-101806855.html",
+      "title": "Jim Cramer Explained What Turned The Tide For NVIDIA Corporation ( NASDAQ : NVDA ) Stock",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/jim-cramer-explained-turned-tide-033354732.html",
       "domain": "finance.yahoo.com",
       "source_country": "United States",
       "language": "English",
-      "published_at": "2026-08-29T12:15:00Z",
-      "category": "markets",
-      "assets": [],
+      "published_at": "2026-08-29T04:15:00Z",
+      "category": "stocks",
+      "assets": [
+        "^NDX",
+        "NVDA"
+      ],
       "macro": [],
-      "relevance": 64,
-      "reason": "incluye un catalizador relevante"
+      "relevance": 62,
+      "reason": "activos: ^NDX, NVDA"
     },
     {
       "title": "Wall Street Review : Stocks End Week Mixed Amid Strong Nvidia Earnings , Fed Clarity",
@@ -65,8 +147,40 @@
       "macro": [
         "Fed"
       ],
-      "relevance": 63,
+      "relevance": 62,
       "reason": "activos: ^GSPC, NVDA · macro: Fed · incluye un catalizador relevante"
+    },
+    {
+      "title": "New to The Street Broadcasting Today at 6 : 30 PM EST on Bloomberg Television Across the U . S ., Latin America and MENA - Featuring FreeCast ( NASDAQ : CAST ), Metaterra Holdings ( MTHI ) and SafeSpace Global ( SGCC )",
+      "url": "http://www.hawaiitelegraph.com/news/279273246/new-to-the-street-broadcasting-today-at-630-pm-est-on-bloomberg-television-across-the-us-latin-america-and-mena-featuring-freecast-nasdaq-cast-metaterra-holdings-mthi-and-safespace-global-sgcc",
+      "domain": "hawaiitelegraph.com",
+      "source_country": "United States",
+      "language": "English",
+      "published_at": "2026-08-29T17:15:00Z",
+      "category": "stocks",
+      "assets": [
+        "^NDX",
+        "META"
+      ],
+      "macro": [],
+      "relevance": 60,
+      "reason": "activos: ^NDX, META"
+    },
+    {
+      "title": "Warsh inflation warning sets up September showdown for the Fed",
+      "url": "https://www.thehindubusinessline.com/portfolio/mutual-funds/warshs-inflation-warning-sets-up-september-showdown-for-the-fed/article71405107.ece",
+      "domain": "thehindubusinessline.com",
+      "source_country": "India",
+      "language": "English",
+      "published_at": "2026-08-29T16:00:00Z",
+      "category": "macro",
+      "assets": [],
+      "macro": [
+        "Fed",
+        "Inflación"
+      ],
+      "relevance": 60,
+      "reason": "macro: Fed, Inflación · incluye un catalizador relevante"
     },
     {
       "title": "Nvidia jumps as 70 % revenue forecast fuels broader chip rally",
@@ -80,36 +194,159 @@
         "NVDA"
       ],
       "macro": [],
-      "relevance": 62,
+      "relevance": 60,
       "reason": "activos: NVDA · incluye un catalizador relevante"
     },
     {
-      "title": "Stocks Rally as Nvidia Earnings Boost AI Optimism",
-      "url": "https://finance.yahoo.com/markets/stocks/articles/stocks-rally-nvidia-earnings-boost-140031535.html",
+      "title": "Why Warsh First Jackson Hole Speech Could Decide the Next Bitcoin Move",
+      "url": "https://finance.yahoo.com/markets/crypto/articles/why-warsh-first-jackson-hole-101752785.html",
       "domain": "finance.yahoo.com",
       "source_country": "United States",
       "language": "English",
-      "published_at": "2026-08-28T21:45:00Z",
+      "published_at": "2026-08-29T12:15:00Z",
+      "category": "crypto",
+      "assets": [
+        "BTC-USD"
+      ],
+      "macro": [],
+      "relevance": 60,
+      "reason": "activos: BTC-USD"
+    },
+    {
+      "title": "Is Crypto Recovering ? BTC Holds Near $80K as ETF Inflows Surge",
+      "url": "https://partners.coinspeaker.com/is-crypto-recovering-bitcoin-holds-near-80k-as-etf-inflows-surge-and-liquidchain-nears-1m",
+      "domain": "partners.coinspeaker.com",
+      "source_country": "United States",
+      "language": "English",
+      "published_at": "2026-08-29T16:00:00Z",
+      "category": "crypto",
+      "assets": [
+        "BTC-USD"
+      ],
+      "macro": [],
+      "relevance": 58,
+      "reason": "activos: BTC-USD · incluye un catalizador relevante"
+    },
+    {
+      "title": "Economics 101 : Oil , inflation and the Federal Reserve - Medicine Hat NewsMedicine Hat News",
+      "url": "https://medicinehatnews.com/commentary/opinions/2026/08/29/economics-101-oil-inflation-and-the-federal-reserve/",
+      "domain": "medicinehatnews.com",
+      "source_country": "United States",
+      "language": "English",
+      "published_at": "2026-08-29T12:15:00Z",
+      "category": "macro",
+      "assets": [],
+      "macro": [
+        "Fed",
+        "Inflación"
+      ],
+      "relevance": 58,
+      "reason": "macro: Fed, Inflación · incluye un catalizador relevante"
+    },
+    {
+      "title": "After Surging 3 , 110 %, Has Sandisk Already Had Its  Nvidia Moment ?",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/surging-3-110-sandisk-already-032000950.html",
+      "domain": "finance.yahoo.com",
+      "source_country": "United States",
+      "language": "English",
+      "published_at": "2026-08-29T08:15:00Z",
       "category": "stocks",
       "assets": [
         "NVDA"
       ],
       "macro": [],
-      "relevance": 60,
-      "reason": "activos: NVDA · incluye un catalizador relevante"
+      "relevance": 58,
+      "reason": "activos: NVDA"
     },
     {
-      "title": "Bill Ackman Just Made His Biggest Portfolio Overhaul in Years , Adding Netflix , Visa , and Mastercard to Pershing Square . What the Thesis Behind the Switch ?",
-      "url": "https://finance.yahoo.com/markets/stocks/articles/bill-ackman-just-made-biggest-042000548.html",
+      "title": "Inflation data  concerning : Fed chair Warsh signals rates may need to rise",
+      "url": "https://timesofindia.indiatimes.com/business/international-business/inflation-data-concerning-fed-chair-warsh-signals-rates-may-need-to-rise/articleshow/133603111.cms",
+      "domain": "timesofindia.indiatimes.com",
+      "source_country": "India",
+      "language": "English",
+      "published_at": "2026-08-29T04:15:00Z",
+      "category": "macro",
+      "assets": [],
+      "macro": [
+        "Fed",
+        "Inflación",
+        "Tipos"
+      ],
+      "relevance": 58,
+      "reason": "macro: Fed, Inflación, Tipos · incluye un catalizador relevante"
+    },
+    {
+      "title": "Billionaire Stanley Druckenmiller Sold Broadcom and Bought These Artificial Intelligence ( AI ) Giants Instead",
+      "url": "https://www.fool.com/investing/2026/08/29/billionaire-stanley-druckenmiller-sold-broadcom-an/?source=iedfolrf0000001",
+      "domain": "fool.com",
+      "source_country": "United States",
+      "language": "English",
+      "published_at": "2026-08-29T22:00:00Z",
+      "category": "stocks",
+      "assets": [
+        "AVGO"
+      ],
+      "macro": [],
+      "relevance": 57,
+      "reason": "activos: AVGO"
+    },
+    {
+      "title": "Cooling US Inflation Gives Markets Breathing Room But Treasury Concerns Persist",
+      "url": "https://www.foreignpolicyjournal.com/2026/08/29/cooling-us-inflation-gives-markets-breathing-room-but-treasury-concerns-persist/",
+      "domain": "foreignpolicyjournal.com",
+      "source_country": "Israel",
+      "language": "English",
+      "published_at": "2026-08-29T18:45:00Z",
+      "category": "macro",
+      "assets": [],
+      "macro": [
+        "Inflación"
+      ],
+      "relevance": 57,
+      "reason": "macro: Inflación · incluye un catalizador relevante"
+    },
+    {
+      "title": "Alex Gerko takes home almost £1bn as trading firm cashes in on volatility",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/alex-gerko-takes-home-almost-161612457.html",
       "domain": "finance.yahoo.com",
       "source_country": "United States",
       "language": "English",
-      "published_at": "2026-08-29T08:45:00Z",
-      "category": "markets",
+      "published_at": "2026-08-29T17:45:00Z",
+      "category": "crypto",
       "assets": [],
       "macro": [],
-      "relevance": 59,
-      "reason": "incluye un catalizador relevante"
+      "relevance": 57,
+      "reason": "contexto de mercado"
+    },
+    {
+      "title": "BitGo Acquires NYDIG Trading Business to Expand Institutional Crypto Platform",
+      "url": "https://finance.yahoo.com/markets/crypto/articles/bitgo-acquires-nydig-trading-business-232300966.html",
+      "domain": "finance.yahoo.com",
+      "source_country": "United States",
+      "language": "English",
+      "published_at": "2026-08-29T05:45:00Z",
+      "category": "crypto",
+      "assets": [
+        "BTC-USD"
+      ],
+      "macro": [],
+      "relevance": 57,
+      "reason": "activos: BTC-USD"
+    },
+    {
+      "title": "Why Im Still Holding Nvidia ( NVDA ) Stock Despite Its Sky - High P / E Ratio",
+      "url": "https://www.aol.com/articles/why-im-still-holding-nvidia-182000000.html",
+      "domain": "aol.com",
+      "source_country": "United States",
+      "language": "English",
+      "published_at": "2026-08-29T19:45:00Z",
+      "category": "stocks",
+      "assets": [
+        "NVDA"
+      ],
+      "macro": [],
+      "relevance": 56,
+      "reason": "activos: NVDA"
     },
     {
       "title": "Nvidia forecast lifts chip stocks as AI spending fears ease",
@@ -123,8 +360,85 @@
         "NVDA"
       ],
       "macro": [],
-      "relevance": 58,
+      "relevance": 56,
       "reason": "activos: NVDA · incluye un catalizador relevante"
+    },
+    {
+      "title": "Precious metals under pressure due to US Fed hawkish stance ; gold fell 0 . 64 and silver slipped 1 . 12 in a week , Delhi News in Hindi",
+      "url": "https://www.khaskhabar.com/local/delhi-ncr/delhi-news/news-precious-metals-under-pressure-due-to-us-fed-hawkish-stance-gold-fell-064-and-silver-slipped-112-in-a-week-news-hindi-1-840467-KKN.html",
+      "domain": "khaskhabar.com",
+      "source_country": "India",
+      "language": "Hindi",
+      "published_at": "2026-08-29T12:15:00Z",
+      "category": "stocks",
+      "assets": [
+        "META"
+      ],
+      "macro": [
+        "Fed"
+      ],
+      "relevance": 56,
+      "reason": "activos: META · macro: Fed"
+    },
+    {
+      "title": "US Fed Rate Hike : अमेरिकी ब्याज दरों में बढ़ोतरी की उम्मीदों से सोमवार को सोने और शेयर मार्केट में बड़े फेरबदल की आशंका , जानें एक्सपर्ट्स की राय",
+      "url": "https://www.patrika.com/business-news/gold-price-may-fall-us-fed-rate-hike-kevin-warsh-speech-20867895",
+      "domain": "patrika.com",
+      "source_country": "India",
+      "language": "Hindi",
+      "published_at": "2026-08-29T08:45:00Z",
+      "category": "macro",
+      "assets": [],
+      "macro": [
+        "Fed",
+        "Tipos"
+      ],
+      "relevance": 56,
+      "reason": "macro: Fed, Tipos · incluye un catalizador relevante"
+    },
+    {
+      "title": "Bill Ackman Just Made His Biggest Portfolio Overhaul in Years , Adding Netflix , Visa , and Mastercard to Pershing Square . What the Thesis Behind the Switch ?",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/bill-ackman-just-made-biggest-042000548.html",
+      "domain": "finance.yahoo.com",
+      "source_country": "United States",
+      "language": "English",
+      "published_at": "2026-08-29T08:45:00Z",
+      "category": "markets",
+      "assets": [],
+      "macro": [],
+      "relevance": 56,
+      "reason": "incluye un catalizador relevante"
+    },
+    {
+      "title": "BlackRock helps pull more Bitcoin wealth deeper into Wall Street",
+      "url": "https://economictimes.indiatimes.com/markets/cryptocurrency/blackrock-helps-pull-more-bitcoin-wealth-deeper-into-wall-street/articleshow/133607321.cms",
+      "domain": "economictimes.indiatimes.com",
+      "source_country": "India",
+      "language": "English",
+      "published_at": "2026-08-29T08:15:00Z",
+      "category": "crypto",
+      "assets": [
+        "BTC-USD",
+        "^GSPC"
+      ],
+      "macro": [],
+      "relevance": 56,
+      "reason": "activos: BTC-USD, ^GSPC"
+    },
+    {
+      "title": "Coinbase and Robinhood Rally as Bitcoin Marches Toward Its Best Week in Months",
+      "url": "https://finance.yahoo.com/markets/crypto/articles/coinbase-robinhood-rally-bitcoin-marches-035923976.html",
+      "domain": "finance.yahoo.com",
+      "source_country": "United States",
+      "language": "English",
+      "published_at": "2026-08-29T04:30:00Z",
+      "category": "crypto",
+      "assets": [
+        "BTC-USD"
+      ],
+      "macro": [],
+      "relevance": 56,
+      "reason": "activos: BTC-USD"
     },
     {
       "title": "AppLovin vs . Alphabet : Which High - Growth Digital Media Stock Is the Better Investment in 2026 ?",
@@ -138,8 +452,66 @@
         "GOOGL"
       ],
       "macro": [],
-      "relevance": 58,
+      "relevance": 56,
       "reason": "activos: GOOGL"
+    },
+    {
+      "title": "Strive ( ASST ) Increased Bitcoin Holdings 5 . 5 %, but Bitcoin per Assumed Diluted Share Rose Just 1 . 3 %. Is the Treasury Strategy Creating Value ?",
+      "url": "https://finance.yahoo.com/markets/crypto/articles/strive-asst-increased-bitcoin-holdings-200548334.html",
+      "domain": "finance.yahoo.com",
+      "source_country": "United States",
+      "language": "English",
+      "published_at": "2026-08-29T02:30:00Z",
+      "category": "crypto",
+      "assets": [
+        "BTC-USD"
+      ],
+      "macro": [],
+      "relevance": 56,
+      "reason": "activos: BTC-USD"
+    },
+    {
+      "title": "Bitcoin is having a great month but Solana is doing even better as coin soars above $100",
+      "url": "https://finance.yahoo.com/markets/crypto/articles/bitcoin-having-great-month-solana-184910512.html",
+      "domain": "finance.yahoo.com",
+      "source_country": "United States",
+      "language": "English",
+      "published_at": "2026-08-29T02:00:00Z",
+      "category": "crypto",
+      "assets": [
+        "BTC-USD"
+      ],
+      "macro": [],
+      "relevance": 56,
+      "reason": "activos: BTC-USD"
+    },
+    {
+      "title": "Pakistan sets up Crypto Regulatory System in Record Time for Just $200 , 000 : PVARA chief",
+      "url": "https://en.dailypakistan.com.pk/29-Aug-2026/pakistan-sets-up-crypto-regulatory-system-in-record-time-for-just-200000-pvara-chief",
+      "domain": "en.dailypakistan.com.pk",
+      "source_country": "Pakistan",
+      "language": "English",
+      "published_at": "2026-08-29T18:45:00Z",
+      "category": "crypto",
+      "assets": [
+        "BTC-USD"
+      ],
+      "macro": [],
+      "relevance": 55,
+      "reason": "activos: BTC-USD"
+    },
+    {
+      "title": "BitGo Buys NYDIG Institutional Trading Arm to Beef Up Derivatives and Financing",
+      "url": "https://finance.yahoo.com/markets/crypto/articles/bitgo-buys-nydigs-institutional-trading-133104447.html",
+      "domain": "finance.yahoo.com",
+      "source_country": "United States",
+      "language": "English",
+      "published_at": "2026-08-29T14:15:00Z",
+      "category": "crypto",
+      "assets": [],
+      "macro": [],
+      "relevance": 55,
+      "reason": "contexto de mercado"
     },
     {
       "title": "Bank of America sends strong message to stock market investors",
@@ -151,7 +523,7 @@
       "category": "markets",
       "assets": [],
       "macro": [],
-      "relevance": 57,
+      "relevance": 55,
       "reason": "contexto de mercado"
     },
     {
@@ -166,7 +538,7 @@
       "macro": [
         "Aranceles"
       ],
-      "relevance": 57,
+      "relevance": 54,
       "reason": "macro: Aranceles · incluye un catalizador relevante"
     },
     {
@@ -179,312 +551,11 @@
       "category": "markets",
       "assets": [],
       "macro": [],
-      "relevance": 56,
-      "reason": "contexto de mercado"
-    },
-    {
-      "title": "My God Nvidia Is Undervalued . Ross Gerber Says $450 A Share Is Possible .",
-      "url": "https://finance.yahoo.com/markets/stocks/articles/god-nvidia-undervalued-ross-gerber-110150845.html",
-      "domain": "finance.yahoo.com",
-      "source_country": "United States",
-      "language": "English",
-      "published_at": "2026-08-28T21:15:00Z",
-      "category": "stocks",
-      "assets": [
-        "NVDA"
-      ],
-      "macro": [],
-      "relevance": 56,
-      "reason": "activos: NVDA"
-    },
-    {
-      "title": "Nvidia $12 . 9B Hugging Face Deal Must Pass Antitrust Review Its Quasi - Mergers Dodged",
-      "url": "https://www.techtimes.com/articles/325863/20260828/nvidias-129b-hugging-face-deal-must-pass-antitrust-review-its-quasi-mergers-dodged.htm",
-      "domain": "techtimes.com",
-      "source_country": "United States",
-      "language": "English",
-      "published_at": "2026-08-28T20:00:00Z",
-      "category": "stocks",
-      "assets": [
-        "NVDA"
-      ],
-      "macro": [],
-      "relevance": 56,
-      "reason": "activos: NVDA · incluye un catalizador relevante"
-    },
-    {
-      "title": "Thinking of Buying SpaceX ? Just Buy This Market - Thumping Stock Instead .",
-      "url": "https://finance.yahoo.com/markets/stocks/articles/thinking-buying-spacex-just-buy-041558977.html",
-      "domain": "finance.yahoo.com",
-      "source_country": "United States",
-      "language": "English",
-      "published_at": "2026-08-29T08:45:00Z",
-      "category": "markets",
-      "assets": [],
-      "macro": [],
-      "relevance": 55,
-      "reason": "contexto de mercado"
-    },
-    {
-      "title": "SEC Filings Just Revealed the Smart Money Is Overweight SpaceX . Should You Buy It Now ?",
-      "url": "https://www.aol.com/articles/sec-filings-just-revealed-smart-153500000.html",
-      "domain": "aol.com",
-      "source_country": "United States",
-      "language": "English",
-      "published_at": "2026-08-29T16:00:00Z",
-      "category": "markets",
-      "assets": [],
-      "macro": [],
       "relevance": 54,
-      "reason": "incluye un catalizador relevante"
-    },
-    {
-      "title": "Breakfast News : To Buy Nvidia or Not to Buy",
-      "url": "https://www.fool.com/investing/breakfast-news/2026/08/29/breakfast-news/?source=iedfolrf0000001",
-      "domain": "fool.com",
-      "source_country": "United States",
-      "language": "English",
-      "published_at": "2026-08-29T12:30:00Z",
-      "category": "stocks",
-      "assets": [
-        "NVDA"
-      ],
-      "macro": [],
-      "relevance": 54,
-      "reason": "activos: NVDA"
-    },
-    {
-      "title": "Stock Market Today , Aug . 28 : Marvell Slides 10 % on Softer Fiscal 2028 Guidance and Google Deal Timing",
-      "url": "https://www.fool.com/coverage/stock-market-today/2026/08/28/stock-market-today-aug-28-marvell-slides-10-on-softer-fiscal-2028-guidance-and-google-deal-timing/?source=iedfolrf0000001",
-      "domain": "fool.com",
-      "source_country": "United States",
-      "language": "English",
-      "published_at": "2026-08-29T04:30:00Z",
-      "category": "stocks",
-      "assets": [
-        "GOOGL"
-      ],
-      "macro": [],
-      "relevance": 54,
-      "reason": "activos: GOOGL · incluye un catalizador relevante"
-    },
-    {
-      "title": "Amazon Jumps 4 % on Expanded AWS Chip Deal : Why Is NVIDIA Falling 4 %?",
-      "url": "https://www.aol.com/articles/amazon-jumps-4-expanded-aws-175747000.html",
-      "domain": "aol.com",
-      "source_country": "United States",
-      "language": "English",
-      "published_at": "2026-08-28T19:15:00Z",
-      "category": "stocks",
-      "assets": [
-        "NVDA",
-        "AMZN"
-      ],
-      "macro": [],
-      "relevance": 54,
-      "reason": "activos: NVDA, AMZN"
-    },
-    {
-      "title": "Wall Street Wanted 45 % Growth From Nvidia . It Guided to 70 %, and the Real Number Is Higher .",
-      "url": "https://247wallst.com/investing/2026/08/28/wall-street-wanted-45-growth-from-nvidia-it-guided-to-70-and-the-real-number-is-higher/",
-      "domain": "247wallst.com",
-      "source_country": "United States",
-      "language": "English",
-      "published_at": "2026-08-28T18:45:00Z",
-      "category": "stocks",
-      "assets": [
-        "^GSPC",
-        "NVDA"
-      ],
-      "macro": [],
-      "relevance": 54,
-      "reason": "activos: ^GSPC, NVDA"
-    },
-    {
-      "title": "S & P 500 investors are quietly making a huge shift",
-      "url": "https://finance.yahoo.com/markets/stocks/articles/p-500-investors-quietly-making-211700649.html",
-      "domain": "finance.yahoo.com",
-      "source_country": "United States",
-      "language": "English",
-      "published_at": "2026-08-29T04:30:00Z",
-      "category": "markets",
-      "assets": [],
-      "macro": [],
-      "relevance": 52,
-      "reason": "contexto de mercado"
-    },
-    {
-      "title": "Jim Cramer Turns Mega Bullish on Nvidia :  The Era of Humongoud Profits Has Begun",
-      "url": "https://www.aol.com/articles/jim-cramer-turns-mega-bullish-181024000.html",
-      "domain": "aol.com",
-      "source_country": "United States",
-      "language": "English",
-      "published_at": "2026-08-28T19:15:00Z",
-      "category": "stocks",
-      "assets": [
-        "NVDA"
-      ],
-      "macro": [],
-      "relevance": 52,
-      "reason": "activos: NVDA · incluye un catalizador relevante"
-    },
-    {
-      "title": "NVIDIA ( NVDA ) Tops Q2 Estimates and Guides Above Forecasts , But Shares Slip",
-      "url": "https://www.insidermonkey.com/blog/nvidia-nvda-tops-q2-estimates-and-guides-above-forecasts-but-shares-slip-1823923/",
-      "domain": "insidermonkey.com",
-      "source_country": "United States",
-      "language": "English",
-      "published_at": "2026-08-28T19:15:00Z",
-      "category": "stocks",
-      "assets": [
-        "NVDA"
-      ],
-      "macro": [],
-      "relevance": 52,
-      "reason": "activos: NVDA · incluye un catalizador relevante"
-    },
-    {
-      "title": "Palantir Billionaire Peter Thiel Just Bought This Magnificent Artificial Intelligence ( AI ) Stock Up 347 , 260 % Since Its IPO",
-      "url": "https://finance.yahoo.com/technology/ai/articles/palantir-billionaire-peter-thiel-just-183200743.html",
-      "domain": "finance.yahoo.com",
-      "source_country": "United States",
-      "language": "English",
-      "published_at": "2026-08-29T01:45:00Z",
-      "category": "markets",
-      "assets": [],
-      "macro": [],
-      "relevance": 51,
-      "reason": "contexto de mercado"
-    },
-    {
-      "title": "Meta Is Down 27 %. One Analyst Sees a $22 Billion AI Business Hiding in Plain Sight",
-      "url": "https://www.insidermonkey.com/blog/meta-is-down-27-one-analyst-sees-a-22-billion-ai-business-hiding-in-plain-sight-1824537/",
-      "domain": "insidermonkey.com",
-      "source_country": "United States",
-      "language": "English",
-      "published_at": "2026-08-29T03:30:00Z",
-      "category": "stocks",
-      "assets": [
-        "META"
-      ],
-      "macro": [],
-      "relevance": 50,
-      "reason": "activos: META"
-    },
-    {
-      "title": "Marvell selloff deepens as investors seek clarity on Google AI deal payoff",
-      "url": "https://economictimes.indiatimes.com/tech/technology/marvell-selloff-deepens-as-investors-seek-clarity-on-google-ai-deal-payoff/articleshow/133602463.cms",
-      "domain": "economictimes.indiatimes.com",
-      "source_country": "India",
-      "language": "English",
-      "published_at": "2026-08-29T03:15:00Z",
-      "category": "stocks",
-      "assets": [
-        "GOOGL"
-      ],
-      "macro": [],
-      "relevance": 50,
-      "reason": "activos: GOOGL"
-    },
-    {
-      "title": "Why Is PagerDuty ( PD ) Stock Rocketing Higher Today",
-      "url": "https://finance.yahoo.com/markets/stocks/articles/why-pagerduty-pd-stock-rocketing-212852112.html",
-      "domain": "finance.yahoo.com",
-      "source_country": "United States",
-      "language": "English",
-      "published_at": "2026-08-28T22:00:00Z",
-      "category": "markets",
-      "assets": [],
-      "macro": [],
-      "relevance": 50,
-      "reason": "contexto de mercado"
-    },
-    {
-      "title": "Marvell Announced a Google AI Deal That Could Generate Up to $120 Billion . The Stock Fell 8 %",
-      "url": "https://www.insidermonkey.com/blog/marvell-announced-a-google-ai-deal-that-could-generate-up-to-120-billion-the-stock-fell-8-1824358/",
-      "domain": "insidermonkey.com",
-      "source_country": "United States",
-      "language": "English",
-      "published_at": "2026-08-28T18:45:00Z",
-      "category": "stocks",
-      "assets": [
-        "GOOGL"
-      ],
-      "macro": [],
-      "relevance": 48,
-      "reason": "activos: GOOGL"
-    },
-    {
-      "title": "A Hawkish Fed Speech Turns a Green Morning Red",
-      "url": "https://www.aol.com/articles/hawkish-fed-speech-turns-green-183304000.html",
-      "domain": "aol.com",
-      "source_country": "United States",
-      "language": "English",
-      "published_at": "2026-08-28T19:15:00Z",
-      "category": "macro",
-      "assets": [],
-      "macro": [
-        "Fed"
-      ],
-      "relevance": 46,
-      "reason": "macro: Fed"
-    },
-    {
-      "title": "Tech leads D - Street bound , FPI play in focus",
-      "url": "https://economictimes.indiatimes.com/markets/stocks/news/tech-leads-d-street-bound-fpi-play-in-focus/articleshow/133603509.cms",
-      "domain": "economictimes.indiatimes.com",
-      "source_country": "India",
-      "language": "English",
-      "published_at": "2026-08-29T04:45:00Z",
-      "category": "markets",
-      "assets": [],
-      "macro": [],
-      "relevance": 45,
-      "reason": "contexto de mercado"
-    },
-    {
-      "title": "Fed主席放鷹掀升息預期 ！ 美股費半跌3 . 47 ％、 台積電ADR跌2 . 29 % | 政治",
-      "url": "https://newtalk.tw/news/view/2026-08-29/1056434",
-      "domain": "newtalk.tw",
-      "source_country": "Taiwan",
-      "language": "Chinese",
-      "published_at": "2026-08-29T04:45:00Z",
-      "category": "markets",
-      "assets": [],
-      "macro": [],
-      "relevance": 45,
-      "reason": "contexto de mercado"
-    },
-    {
-      "title": "Bank of America takes heat for stark S & P 500 call",
-      "url": "https://www.aol.com/articles/bank-america-takes-heat-stark-223700000.html",
-      "domain": "aol.com",
-      "source_country": "United States",
-      "language": "English",
-      "published_at": "2026-08-29T03:15:00Z",
-      "category": "markets",
-      "assets": [],
-      "macro": [],
-      "relevance": 44,
-      "reason": "contexto de mercado"
-    },
-    {
-      "title": "英伟达被曝129亿美元收购Hugging Face ： 抢开源系统客户 ， 重返云计算市场",
-      "url": "https://baijiahao.baidu.com/s?id=1874672146321447731",
-      "domain": "baijiahao.baidu.com",
-      "source_country": "China",
-      "language": "Chinese",
-      "published_at": "2026-08-29T02:15:00Z",
-      "category": "markets",
-      "assets": [],
-      "macro": [],
-      "relevance": 43,
       "reason": "contexto de mercado"
     }
   ],
   "errors": [
-    "macro: URLError: <urlopen error _ssl.c:993: The handshake operation timed out>",
-    "crypto: HTTPError: HTTP Error 429: Too Many Requests",
-    "indices: URLError: <urlopen error timed out>"
+    "indices: URLError: <urlopen error _ssl.c:993: The handshake operation timed out>"
   ]
 }
