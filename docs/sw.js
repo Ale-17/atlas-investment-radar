@@ -1,12 +1,14 @@
-const CACHE = "atlas-v5-news-payday-fix-2";
+const CACHE = "atlas-v6-premium-1";
 const STATIC = [
   "./",
   "./index.html",
   "./styles.css",
   "./payday-fix.css",
+  "./premium.css",
   "./app.js",
   "./payday.js",
   "./news.js",
+  "./polish.js",
   "./manifest.webmanifest",
   "./icons/icon-192.png",
   "./icons/icon-512.png"
