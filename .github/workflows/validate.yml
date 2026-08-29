@@ -42,9 +42,11 @@ jobs:
           test -f docs/index.html
           test -f docs/styles.css
           test -f docs/payday-fix.css
+          test -f docs/premium.css
           test -f docs/app.js
           test -f docs/payday.js
           test -f docs/news.js
+          test -f docs/polish.js
           test -f docs/data/news.json
           test -f docs/manifest.webmanifest
           test -f docs/sw.js
@@ -56,8 +58,17 @@ jobs:
           grep -F '"./payday-fix.css"' docs/sw.js
           grep -F 'payday-fix.css' .github/workflows/pages.yml
 
+      - name: Guard V6 premium build
+        run: |
+          grep -F '"./premium.css"' docs/sw.js
+          grep -F '"./polish.js"' docs/sw.js
+          grep -F 'premium.css' .github/workflows/pages.yml
+          grep -F 'polish.js' .github/workflows/pages.yml
+          grep -F 'Atlas V6' .github/workflows/pages.yml
+
       - name: JavaScript syntax
         run: |
           node --check docs/app.js
           node --check docs/payday.js
           node --check docs/news.js
+          node --check docs/polish.js
