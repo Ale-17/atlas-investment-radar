@@ -40,18 +40,23 @@ jobs:
           path = Path("_site/index.html")
           html = path.read_text(encoding="utf-8")
 
-          # Payday mobile visibility fix must always be published.
+          # Core stylesheet + safety + premium layer, in that order.
           css_anchor = '  <link rel="stylesheet" href="styles.css" />'
           payday_css = '  <link rel="stylesheet" href="payday-fix.css" />'
+          premium_css = '  <link rel="stylesheet" href="premium.css" />'
+          if css_anchor not in html:
+              raise SystemExit("styles.css link not found")
           if payday_css not in html:
-              if css_anchor not in html:
-                  raise SystemExit("styles.css link not found")
               html = html.replace(css_anchor, css_anchor + '\n' + payday_css, 1)
+          if premium_css not in html:
+              anchor = payday_css if payday_css in html else css_anchor
+              html = html.replace(anchor, anchor + '\n' + premium_css, 1)
 
-          # Runtime feature modules.
+          # Runtime modules. Polish loads last so it can enhance dynamic modules safely.
           app_script = '  <script src="app.js"></script>'
           payday_script = '  <script src="payday.js"></script>'
           news_script = '  <script src="news.js"></script>'
+          polish_script = '  <script src="polish.js"></script>'
           if app_script not in html:
               raise SystemExit("app.js script tag not found")
           if payday_script not in html:
@@ -59,15 +64,26 @@ jobs:
           if news_script not in html:
               anchor = payday_script if payday_script in html else app_script
               html = html.replace(anchor, anchor + '\n' + news_script, 1)
+          if polish_script not in html:
+              anchor = news_script if news_script in html else payday_script
+              html = html.replace(anchor, anchor + '\n' + polish_script, 1)
+
+          # Present the deployed build as Atlas V6 without changing application logic.
+          html = html.replace(
+              '<title>Atlas V5 — Personal Finance & Investment Radar</title>',
+              '<title>Atlas V6 — Personal Finance & Investment Radar</title>'
+          )
 
           path.write_text(html, encoding="utf-8")
 
-          # Fail the build rather than publishing a broken Payday modal again.
+          # Fail rather than publish an incomplete mobile/premium build.
           final = path.read_text(encoding="utf-8")
           required = [
               'href="payday-fix.css"',
+              'href="premium.css"',
               'src="payday.js"',
               'src="news.js"',
+              'src="polish.js"',
           ]
           missing = [x for x in required if x not in final]
           if missing:
