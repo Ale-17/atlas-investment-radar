@@ -1,9 +1,26 @@
 {
-  "generated_at": "2026-08-30T18:38:50.409233Z",
+  "generated_at": "2026-08-30T23:32:24.522098Z",
   "source": "GDELT DOC 2.0",
   "horizon_hours": 24,
   "article_count": 36,
   "articles": [
+    {
+      "title": "Stock market outlook : S & P 500 , Fed rate hike odds and jobs report to watch next week",
+      "url": "https://www.hindustantimes.com/business/stock-market-outlook-s-p-500-fed-rate-hike-odds-and-jobs-report-to-watch-next-week-101788115564016.html",
+      "domain": "hindustantimes.com",
+      "source_country": "India",
+      "language": "English",
+      "published_at": "2026-08-30T20:15:00Z",
+      "category": "macro",
+      "assets": [],
+      "macro": [
+        "Fed",
+        "Tipos",
+        "Empleo"
+      ],
+      "relevance": 70,
+      "reason": "macro: Fed, Tipos, Empleo · incluye un catalizador relevante"
+    },
     {
       "title": "Why Metaplanet ( TSE : 3350 ) Is Up 13 . 1 % After Launching a U . S . Bitcoin Treasury Vehicle",
       "url": "https://finance.yahoo.com/markets/crypto/articles/why-metaplanet-tse-3350-13-050426549.html",
@@ -17,7 +34,7 @@
         "META"
       ],
       "macro": [],
-      "relevance": 65,
+      "relevance": 63,
       "reason": "activos: BTC-USD, META"
     },
     {
@@ -32,7 +49,7 @@
         "BTC-USD"
       ],
       "macro": [],
-      "relevance": 64,
+      "relevance": 62,
       "reason": "activos: BTC-USD"
     },
     {
@@ -48,7 +65,7 @@
         "Fed",
         "Tipos"
       ],
-      "relevance": 64,
+      "relevance": 62,
       "reason": "macro: Fed, Tipos · incluye un catalizador relevante"
     },
     {
@@ -63,8 +80,21 @@
         "AMZN"
       ],
       "macro": [],
-      "relevance": 61,
+      "relevance": 59,
       "reason": "activos: AMZN · incluye un catalizador relevante"
+    },
+    {
+      "title": "What Happens When You Invest in the Stock Market at the Worst Possible Time ? History Has Reassuring News for Investors .",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/happens-invest-stock-market-worst-192000469.html",
+      "domain": "finance.yahoo.com",
+      "source_country": "United States",
+      "language": "English",
+      "published_at": "2026-08-30T20:15:00Z",
+      "category": "markets",
+      "assets": [],
+      "macro": [],
+      "relevance": 58,
+      "reason": "contexto de mercado"
     },
     {
       "title": "I feel shoehorned : My father funded my $800 , 000 Roth IRA . Does that give him the right to say how I invest it ?",
@@ -76,7 +106,7 @@
       "category": "markets",
       "assets": [],
       "macro": [],
-      "relevance": 59,
+      "relevance": 57,
       "reason": "contexto de mercado"
     },
     {
@@ -89,8 +119,23 @@
       "category": "markets",
       "assets": [],
       "macro": [],
-      "relevance": 58,
+      "relevance": 56,
       "reason": "contexto de mercado"
+    },
+    {
+      "title": "Contrasting Capstone Therapeutics ( NASDAQ : CAPS ) & Watsco ( NYSE : WSO )",
+      "url": "https://www.dailypolitical.com/2026/08/30/contrasting-capstone-therapeutics-nasdaqcaps-watsco-nysewso.html",
+      "domain": "dailypolitical.com",
+      "source_country": "United States",
+      "language": "English",
+      "published_at": "2026-08-30T18:45:00Z",
+      "category": "markets",
+      "assets": [
+        "^NDX"
+      ],
+      "macro": [],
+      "relevance": 55,
+      "reason": "activos: ^NDX"
     },
     {
       "title": "Comparing Virtus Investment Partners ( NASDAQ : VRTS ) and Nuveen Municipal Value Fund ( NYSE : NUV )",
@@ -104,8 +149,21 @@
         "^NDX"
       ],
       "macro": [],
-      "relevance": 57,
+      "relevance": 55,
       "reason": "activos: ^NDX"
+    },
+    {
+      "title": "3 Simple ETFs Worth Buying and Holding for Decades",
+      "url": "https://www.fool.com/investing/2026/08/30/3-simple-etfs-worth-buying-and-holding-for-decades/?source=iedfolrf0000001",
+      "domain": "fool.com",
+      "source_country": "United States",
+      "language": "English",
+      "published_at": "2026-08-30T21:00:00Z",
+      "category": "markets",
+      "assets": [],
+      "macro": [],
+      "relevance": 54,
+      "reason": "incluye un catalizador relevante"
     },
     {
       "title": "Analyzing Power Solutions International ( NASDAQ : PSIX ) & Erayak Power Solution Group ( NASDAQ : RAYA )",
@@ -119,7 +177,7 @@
         "^NDX"
       ],
       "macro": [],
-      "relevance": 56,
+      "relevance": 54,
       "reason": "activos: ^NDX"
     },
     {
@@ -134,7 +192,7 @@
         "^NDX"
       ],
       "macro": [],
-      "relevance": 56,
+      "relevance": 54,
       "reason": "activos: ^NDX"
     },
     {
@@ -149,22 +207,7 @@
         "^NDX"
       ],
       "macro": [],
-      "relevance": 56,
-      "reason": "activos: ^NDX"
-    },
-    {
-      "title": "Everpure ( NYSE : P ) and Apple ( NASDAQ : AAPL ) Critical Survey",
-      "url": "https://www.themarketsdaily.com/2026/08/30/everpure-nysep-and-apple-nasdaqaapl-critical-survey.html",
-      "domain": "themarketsdaily.com",
-      "source_country": "United States",
-      "language": "English",
-      "published_at": "2026-08-30T14:45:00Z",
-      "category": "markets",
-      "assets": [
-        "^NDX"
-      ],
-      "macro": [],
-      "relevance": 56,
+      "relevance": 54,
       "reason": "activos: ^NDX"
     },
     {
@@ -177,7 +220,7 @@
       "category": "crypto",
       "assets": [],
       "macro": [],
-      "relevance": 56,
+      "relevance": 54,
       "reason": "incluye un catalizador relevante"
     },
     {
@@ -192,25 +235,38 @@
       "macro": [
         "Fed"
       ],
-      "relevance": 56,
+      "relevance": 54,
       "reason": "macro: Fed"
     },
     {
-      "title": "AST SpaceMobile ( NASDAQ : ASTS ) Stock Slides 15 . 5 % As Rate Hike Fears Grip Interest - Sensitive Growth Stocks",
-      "url": "https://www.foreignpolicyjournal.com/2026/08/29/ast-spacemobile-nasdaq-asts-stock-slides-15-5-as-rate-hike-fears-grip-interest-sensitive-growth-stocks/",
-      "domain": "foreignpolicyjournal.com",
-      "source_country": "Israel",
+      "title": "The Fed just took away the market favorite safety net - Investment Watch Blog",
+      "url": "https://www.investmentwatchblog.com/the-fed-just-took-away-the-markets-favorite-safety-net/",
+      "domain": "investmentwatchblog.com",
+      "source_country": "United States",
       "language": "English",
-      "published_at": "2026-08-29T18:45:00Z",
-      "category": "macro",
+      "published_at": "2026-08-30T18:45:00Z",
+      "category": "crypto",
+      "assets": [],
+      "macro": [
+        "Fed"
+      ],
+      "relevance": 53,
+      "reason": "macro: Fed"
+    },
+    {
+      "title": "Everpure ( NYSE : P ) and Apple ( NASDAQ : AAPL ) Critical Survey",
+      "url": "https://www.themarketsdaily.com/2026/08/30/everpure-nysep-and-apple-nasdaqaapl-critical-survey.html",
+      "domain": "themarketsdaily.com",
+      "source_country": "United States",
+      "language": "English",
+      "published_at": "2026-08-30T14:45:00Z",
+      "category": "markets",
       "assets": [
         "^NDX"
       ],
-      "macro": [
-        "Tipos"
-      ],
-      "relevance": 56,
-      "reason": "activos: ^NDX · macro: Tipos · incluye un catalizador relevante"
+      "macro": [],
+      "relevance": 53,
+      "reason": "activos: ^NDX"
     },
     {
       "title": "Pakistan unveils fast - track virtual assets regime at Bitcoin Asia",
@@ -224,7 +280,7 @@
         "BTC-USD"
       ],
       "macro": [],
-      "relevance": 55,
+      "relevance": 53,
       "reason": "activos: BTC-USD"
     },
     {
@@ -239,7 +295,7 @@
         "BTC-USD"
       ],
       "macro": [],
-      "relevance": 55,
+      "relevance": 53,
       "reason": "activos: BTC-USD"
     },
     {
@@ -254,7 +310,7 @@
         "^GSPC"
       ],
       "macro": [],
-      "relevance": 55,
+      "relevance": 52,
       "reason": "activos: ^GSPC"
     },
     {
@@ -269,7 +325,7 @@
         "^NDX"
       ],
       "macro": [],
-      "relevance": 55,
+      "relevance": 52,
       "reason": "activos: ^NDX"
     },
     {
@@ -284,7 +340,7 @@
         "^NDX"
       ],
       "macro": [],
-      "relevance": 55,
+      "relevance": 52,
       "reason": "activos: ^NDX"
     },
     {
@@ -299,7 +355,7 @@
         "BTC-USD"
       ],
       "macro": [],
-      "relevance": 54,
+      "relevance": 52,
       "reason": "activos: BTC-USD"
     },
     {
@@ -312,50 +368,8 @@
       "category": "markets",
       "assets": [],
       "macro": [],
-      "relevance": 54,
+      "relevance": 52,
       "reason": "contexto de mercado"
-    },
-    {
-      "title": "What to Know About SharkNinja Chief Commercial Officer Selling 50 , 000 Shares for $9 . 3 Million",
-      "url": "https://finance.yahoo.com/markets/stocks/articles/know-sharkninjas-chief-commercial-officer-225647062.html",
-      "domain": "finance.yahoo.com",
-      "source_country": "United States",
-      "language": "English",
-      "published_at": "2026-08-30T07:15:00Z",
-      "category": "markets",
-      "assets": [],
-      "macro": [],
-      "relevance": 54,
-      "reason": "contexto de mercado"
-    },
-    {
-      "title": "Better International ETF : the iShares IEFA vs . State Street SPDW",
-      "url": "https://finance.yahoo.com/markets/stocks/articles/better-international-etf-ishares-iefa-212001961.html",
-      "domain": "finance.yahoo.com",
-      "source_country": "United States",
-      "language": "English",
-      "published_at": "2026-08-29T22:00:00Z",
-      "category": "markets",
-      "assets": [],
-      "macro": [],
-      "relevance": 54,
-      "reason": "incluye un catalizador relevante"
-    },
-    {
-      "title": "New to The Street Broadcasting Today at 6 : 30 PM EST on Bloomberg Television Across the U . S ., Latin America and MENA - Featuring FreeCast ( NASDAQ : CAST ), Metaterra Holdings ( MTHI ) and SafeSpace Global ( SGCC )",
-      "url": "http://www.californiatelegraph.com/news/279273246/new-to-the-street-broadcasting-today-at-630-pm-est-on-bloomberg-television-across-the-us-latin-america-and-mena-featuring-freecast-nasdaq-cast-metaterra-holdings-mthi-and-safespace-global-sgcc",
-      "domain": "californiatelegraph.com",
-      "source_country": "United States",
-      "language": "English",
-      "published_at": "2026-08-29T18:45:00Z",
-      "category": "stocks",
-      "assets": [
-        "^NDX",
-        "META"
-      ],
-      "macro": [],
-      "relevance": 54,
-      "reason": "activos: ^NDX, META"
     },
     {
       "title": "Can Bitcoin Reach $1 Million by 2030 ? One Crypto Leader Is Skeptical .",
@@ -369,7 +383,7 @@
         "BTC-USD"
       ],
       "macro": [],
-      "relevance": 53,
+      "relevance": 51,
       "reason": "activos: BTC-USD"
     },
     {
@@ -384,8 +398,34 @@
         "BTC-USD"
       ],
       "macro": [],
-      "relevance": 53,
+      "relevance": 51,
       "reason": "activos: BTC-USD"
+    },
+    {
+      "title": "What to Know About SharkNinja Chief Commercial Officer Selling 50 , 000 Shares for $9 . 3 Million",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/know-sharkninjas-chief-commercial-officer-225647062.html",
+      "domain": "finance.yahoo.com",
+      "source_country": "United States",
+      "language": "English",
+      "published_at": "2026-08-30T07:15:00Z",
+      "category": "markets",
+      "assets": [],
+      "macro": [],
+      "relevance": 51,
+      "reason": "contexto de mercado"
+    },
+    {
+      "title": "August s - a transformat în luna deprecierii pentru leu",
+      "url": "https://www.ziarulevenimentul.ro/stiri/economie/august-s-a-transformat-in-luna-deprecierii-pentru-leu--217600737.html",
+      "domain": "ziarulevenimentul.ro",
+      "source_country": "Romania",
+      "language": "Romanian",
+      "published_at": "2026-08-30T20:15:00Z",
+      "category": "crypto",
+      "assets": [],
+      "macro": [],
+      "relevance": 50,
+      "reason": "contexto de mercado"
     },
     {
       "title": "GDP data , crude prices among 7 factors likely to steer D - Street this week",
@@ -399,7 +439,7 @@
       "macro": [
         "PIB"
       ],
-      "relevance": 53,
+      "relevance": 50,
       "reason": "macro: PIB · incluye un catalizador relevante"
     },
     {
@@ -412,7 +452,7 @@
       "category": "markets",
       "assets": [],
       "macro": [],
-      "relevance": 52,
+      "relevance": 50,
       "reason": "contexto de mercado"
     },
     {
@@ -425,7 +465,7 @@
       "category": "markets",
       "assets": [],
       "macro": [],
-      "relevance": 52,
+      "relevance": 50,
       "reason": "contexto de mercado"
     },
     {
@@ -438,7 +478,7 @@
       "category": "markets",
       "assets": [],
       "macro": [],
-      "relevance": 51,
+      "relevance": 49,
       "reason": "contexto de mercado"
     },
     {
@@ -451,20 +491,7 @@
       "category": "crypto",
       "assets": [],
       "macro": [],
-      "relevance": 50,
-      "reason": "contexto de mercado"
-    },
-    {
-      "title": "Forum Energy Technologies ( NYSE : FET ) & Precision Drilling ( NYSE : PDS ) Financial Contrast",
-      "url": "https://www.tickerreport.com/banking-finance/13566582/forum-energy-technologies-nysefet-precision-drilling-nysepds-financial-contrast.html",
-      "domain": "tickerreport.com",
-      "source_country": "United States",
-      "language": "English",
-      "published_at": "2026-08-30T16:15:00Z",
-      "category": "markets",
-      "assets": [],
-      "macro": [],
-      "relevance": 50,
+      "relevance": 48,
       "reason": "contexto de mercado"
     },
     {
@@ -477,51 +504,27 @@
       "category": "markets",
       "assets": [],
       "macro": [],
-      "relevance": 50,
+      "relevance": 48,
       "reason": "contexto de mercado"
     },
     {
-      "title": "USD / CAD Rallies as Wheat and Soybeans Break Out",
-      "url": "https://www.dailyforex.com/forex-technical-analysis/2026/08/weekly-pairs-in-focus-from-31st-august-to-4th-september-2026/249128",
-      "domain": "dailyforex.com",
-      "source_country": "United Kingdom",
-      "language": "English",
-      "published_at": "2026-08-30T15:30:00Z",
-      "category": "crypto",
-      "assets": [],
-      "macro": [],
-      "relevance": 50,
-      "reason": "contexto de mercado"
-    },
-    {
-      "title": "US equities may withstand higher yields as growth , AI and strong balance sheets cushion valuations : Emkay",
-      "url": "https://news.webindia123.com/news/Articles/Business/20260830/4492502.html",
-      "domain": "news.webindia123.com",
+      "title": "From crypto bets to SIPs , young India finds its money habit",
+      "url": "https://economictimes.indiatimes.com/industry/banking/finance/from-crypto-bets-to-sips-young-india-finds-its-money-habit/articleshow/133622295.cms",
+      "domain": "economictimes.indiatimes.com",
       "source_country": "India",
       "language": "English",
-      "published_at": "2026-08-30T15:30:00Z",
-      "category": "markets",
-      "assets": [],
+      "published_at": "2026-08-30T04:15:00Z",
+      "category": "crypto",
+      "assets": [
+        "BTC-USD"
+      ],
       "macro": [],
-      "relevance": 50,
-      "reason": "contexto de mercado"
-    },
-    {
-      "title": "Analyzing DCC ( OTCMKTS : DCCPF ) and Brady ( NYSE : BRC )",
-      "url": "https://www.themarketsdaily.com/2026/08/30/analyzing-dcc-otcmktsdccpf-and-brady-nysebrc.html",
-      "domain": "themarketsdaily.com",
-      "source_country": "United States",
-      "language": "English",
-      "published_at": "2026-08-30T15:15:00Z",
-      "category": "markets",
-      "assets": [],
-      "macro": [],
-      "relevance": 50,
-      "reason": "contexto de mercado"
+      "relevance": 48,
+      "reason": "activos: BTC-USD"
     }
   ],
   "errors": [
-    "macro: URLError: <urlopen error timed out>",
-    "stocks: URLError: <urlopen error _ssl.c:993: The handshake operation timed out>"
+    "macro: URLError: <urlopen error _ssl.c:993: The handshake operation timed out>",
+    "stocks: URLError: <urlopen error timed out>"
   ]
 }
