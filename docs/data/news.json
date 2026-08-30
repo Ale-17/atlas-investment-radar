@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-08-30T14:25:51.855726Z",
+  "generated_at": "2026-08-30T18:38:50.409233Z",
   "source": "GDELT DOC 2.0",
   "horizon_hours": 24,
-  "article_count": 18,
+  "article_count": 36,
   "articles": [
     {
       "title": "Why Metaplanet ( TSE : 3350 ) Is Up 13 . 1 % After Launching a U . S . Bitcoin Treasury Vehicle",
@@ -17,8 +17,23 @@
         "META"
       ],
       "macro": [],
-      "relevance": 67,
+      "relevance": 65,
       "reason": "activos: BTC-USD, META"
+    },
+    {
+      "title": "Bitcoin Is Surging , But Investors Are Still Worried About Bitcoin Treasury Companies . Here Why Theyre Right .",
+      "url": "https://finance.yahoo.com/markets/crypto/articles/bitcoin-surging-investors-still-worried-153547721.html",
+      "domain": "finance.yahoo.com",
+      "source_country": "United States",
+      "language": "English",
+      "published_at": "2026-08-30T16:15:00Z",
+      "category": "crypto",
+      "assets": [
+        "BTC-USD"
+      ],
+      "macro": [],
+      "relevance": 64,
+      "reason": "activos: BTC-USD"
     },
     {
       "title": "Stocks Fall as Hawkish Warsh Boosts Fed Rate Hike Chances",
@@ -33,8 +48,124 @@
         "Fed",
         "Tipos"
       ],
-      "relevance": 66,
+      "relevance": 64,
       "reason": "macro: Fed, Tipos · incluye un catalizador relevante"
+    },
+    {
+      "title": "Amazon , Reddit stocks sink to cap jam - packed earnings week",
+      "url": "https://bitacora.com.uy/amazon-reddit-stocks-sink-to-cap-jam-packed-earnings-week/",
+      "domain": "bitacora.com.uy",
+      "source_country": "Uruguay",
+      "language": "English",
+      "published_at": "2026-08-30T17:45:00Z",
+      "category": "stocks",
+      "assets": [
+        "AMZN"
+      ],
+      "macro": [],
+      "relevance": 61,
+      "reason": "activos: AMZN · incluye un catalizador relevante"
+    },
+    {
+      "title": "I feel shoehorned : My father funded my $800 , 000 Roth IRA . Does that give him the right to say how I invest it ?",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/feel-shoehorned-father-funded-800-153100369.html",
+      "domain": "finance.yahoo.com",
+      "source_country": "United States",
+      "language": "English",
+      "published_at": "2026-08-30T18:15:00Z",
+      "category": "markets",
+      "assets": [],
+      "macro": [],
+      "relevance": 59,
+      "reason": "contexto de mercado"
+    },
+    {
+      "title": "JPMorgan remains positive on equities , sees rotation driving further gains",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/jpmorgan-remains-positive-equities-sees-150916529.html",
+      "domain": "finance.yahoo.com",
+      "source_country": "United States",
+      "language": "English",
+      "published_at": "2026-08-30T16:15:00Z",
+      "category": "markets",
+      "assets": [],
+      "macro": [],
+      "relevance": 58,
+      "reason": "contexto de mercado"
+    },
+    {
+      "title": "Comparing Virtus Investment Partners ( NASDAQ : VRTS ) and Nuveen Municipal Value Fund ( NYSE : NUV )",
+      "url": "https://www.tickerreport.com/banking-finance/13566621/comparing-virtus-investment-partners-nasdaqvrts-and-nuveen-municipal-value-fund-nysenuv.html",
+      "domain": "tickerreport.com",
+      "source_country": "United States",
+      "language": "English",
+      "published_at": "2026-08-30T17:45:00Z",
+      "category": "markets",
+      "assets": [
+        "^NDX"
+      ],
+      "macro": [],
+      "relevance": 57,
+      "reason": "activos: ^NDX"
+    },
+    {
+      "title": "Analyzing Power Solutions International ( NASDAQ : PSIX ) & Erayak Power Solution Group ( NASDAQ : RAYA )",
+      "url": "https://www.themarketsdaily.com/2026/08/30/analyzing-power-solutions-international-nasdaqpsix-erayak-power-solution-group-nasdaqraya.html",
+      "domain": "themarketsdaily.com",
+      "source_country": "United States",
+      "language": "English",
+      "published_at": "2026-08-30T16:15:00Z",
+      "category": "markets",
+      "assets": [
+        "^NDX"
+      ],
+      "macro": [],
+      "relevance": 56,
+      "reason": "activos: ^NDX"
+    },
+    {
+      "title": "Take - Two Interactive Software ( NASDAQ : TTWO ) & Spotify Technology ( NYSE : SPOT ) Head - To - Head Analysis",
+      "url": "https://www.dailypolitical.com/2026/08/30/take-two-interactive-software-nasdaqttwo-spotify-technology-nysespot-head-to-head-analysis.html",
+      "domain": "dailypolitical.com",
+      "source_country": "United States",
+      "language": "English",
+      "published_at": "2026-08-30T16:00:00Z",
+      "category": "markets",
+      "assets": [
+        "^NDX"
+      ],
+      "macro": [],
+      "relevance": 56,
+      "reason": "activos: ^NDX"
+    },
+    {
+      "title": "Proto Labs ( NYSE : PRLB ) vs . GreenPower Motor ( NASDAQ : GP ) Financial Review",
+      "url": "https://www.tickerreport.com/banking-finance/13566570/proto-labs-nyseprlb-vs-greenpower-motor-nasdaqgp-financial-review.html",
+      "domain": "tickerreport.com",
+      "source_country": "United States",
+      "language": "English",
+      "published_at": "2026-08-30T15:45:00Z",
+      "category": "markets",
+      "assets": [
+        "^NDX"
+      ],
+      "macro": [],
+      "relevance": 56,
+      "reason": "activos: ^NDX"
+    },
+    {
+      "title": "Everpure ( NYSE : P ) and Apple ( NASDAQ : AAPL ) Critical Survey",
+      "url": "https://www.themarketsdaily.com/2026/08/30/everpure-nysep-and-apple-nasdaqaapl-critical-survey.html",
+      "domain": "themarketsdaily.com",
+      "source_country": "United States",
+      "language": "English",
+      "published_at": "2026-08-30T14:45:00Z",
+      "category": "markets",
+      "assets": [
+        "^NDX"
+      ],
+      "macro": [],
+      "relevance": 56,
+      "reason": "activos: ^NDX"
     },
     {
       "title": "Coinbase ( COIN ) Q2 Revenue Fell , but Its Diversification Story Got Stronger",
@@ -46,8 +177,55 @@
       "category": "crypto",
       "assets": [],
       "macro": [],
-      "relevance": 58,
+      "relevance": 56,
       "reason": "incluye un catalizador relevante"
+    },
+    {
+      "title": "Kevin Warsh gets what every Fed chair hopes for : a bond market that trusts his word",
+      "url": "https://finance.yahoo.com/economy/policy/articles/kevin-warsh-gets-every-fed-201000807.html",
+      "domain": "finance.yahoo.com",
+      "source_country": "United States",
+      "language": "English",
+      "published_at": "2026-08-30T03:00:00Z",
+      "category": "macro",
+      "assets": [],
+      "macro": [
+        "Fed"
+      ],
+      "relevance": 56,
+      "reason": "macro: Fed"
+    },
+    {
+      "title": "AST SpaceMobile ( NASDAQ : ASTS ) Stock Slides 15 . 5 % As Rate Hike Fears Grip Interest - Sensitive Growth Stocks",
+      "url": "https://www.foreignpolicyjournal.com/2026/08/29/ast-spacemobile-nasdaq-asts-stock-slides-15-5-as-rate-hike-fears-grip-interest-sensitive-growth-stocks/",
+      "domain": "foreignpolicyjournal.com",
+      "source_country": "Israel",
+      "language": "English",
+      "published_at": "2026-08-29T18:45:00Z",
+      "category": "macro",
+      "assets": [
+        "^NDX"
+      ],
+      "macro": [
+        "Tipos"
+      ],
+      "relevance": 56,
+      "reason": "activos: ^NDX · macro: Tipos · incluye un catalizador relevante"
+    },
+    {
+      "title": "Pakistan unveils fast - track virtual assets regime at Bitcoin Asia",
+      "url": "https://arynews.tv/pakistans-virtual-assets-regulatory-regime-draws-international-attention-at-bitcoin-asia",
+      "domain": "arynews.tv",
+      "source_country": "Pakistan",
+      "language": "English",
+      "published_at": "2026-08-30T14:30:00Z",
+      "category": "crypto",
+      "assets": [
+        "BTC-USD"
+      ],
+      "macro": [],
+      "relevance": 55,
+      "reason": "activos: BTC-USD"
     },
     {
       "title": "Bitcoin - Prognose : Kommt die 100 . 000 - Dollar - Marke 2026 zurück ?",
@@ -61,8 +239,53 @@
         "BTC-USD"
       ],
       "macro": [],
-      "relevance": 57,
+      "relevance": 55,
       "reason": "activos: BTC-USD"
+    },
+    {
+      "title": "The Stock Market Is Doing Something That Been Witnessed Just 3 Times Over Nearly 156 Years -- and This Signal Has Proven Disastrous for Wall Street",
+      "url": "https://www.aol.com/articles/stock-market-doing-something-thats-105601000.html",
+      "domain": "aol.com",
+      "source_country": "United States",
+      "language": "English",
+      "published_at": "2026-08-30T13:00:00Z",
+      "category": "markets",
+      "assets": [
+        "^GSPC"
+      ],
+      "macro": [],
+      "relevance": 55,
+      "reason": "activos: ^GSPC"
+    },
+    {
+      "title": "Turning Point Brands ( NYSE : TPB ) and Hempacco ( NASDAQ : HPCO ) Financial Review",
+      "url": "https://www.dailypolitical.com/2026/08/30/turning-point-brands-nysetpb-and-hempacco-nasdaqhpco-financial-review.html",
+      "domain": "dailypolitical.com",
+      "source_country": "United States",
+      "language": "English",
+      "published_at": "2026-08-30T13:00:00Z",
+      "category": "markets",
+      "assets": [
+        "^NDX"
+      ],
+      "macro": [],
+      "relevance": 55,
+      "reason": "activos: ^NDX"
+    },
+    {
+      "title": "Sintx Technologies ( NASDAQ : SINT ) & SiBone ( NASDAQ : SIBN ) Head to Head Contrast",
+      "url": "https://www.dailypolitical.com/2026/08/30/sintx-technologies-nasdaqsint-sibone-nasdaqsibn-head-to-head-contrast.html",
+      "domain": "dailypolitical.com",
+      "source_country": "United States",
+      "language": "English",
+      "published_at": "2026-08-30T13:00:00Z",
+      "category": "markets",
+      "assets": [
+        "^NDX"
+      ],
+      "macro": [],
+      "relevance": 55,
+      "reason": "activos: ^NDX"
     },
     {
       "title": "Vietnam moves to build safer crypto asset market",
@@ -76,8 +299,63 @@
         "BTC-USD"
       ],
       "macro": [],
-      "relevance": 56,
+      "relevance": 54,
       "reason": "activos: BTC-USD"
+    },
+    {
+      "title": "Investors prosper and consumers pay as the Iran war exacts an uneven economic toll 6 months in",
+      "url": "https://finance.yahoo.com/economy/articles/investors-prosper-consumers-pay-iran-070512627.html",
+      "domain": "finance.yahoo.com",
+      "source_country": "United States",
+      "language": "English",
+      "published_at": "2026-08-30T07:45:00Z",
+      "category": "markets",
+      "assets": [],
+      "macro": [],
+      "relevance": 54,
+      "reason": "contexto de mercado"
+    },
+    {
+      "title": "What to Know About SharkNinja Chief Commercial Officer Selling 50 , 000 Shares for $9 . 3 Million",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/know-sharkninjas-chief-commercial-officer-225647062.html",
+      "domain": "finance.yahoo.com",
+      "source_country": "United States",
+      "language": "English",
+      "published_at": "2026-08-30T07:15:00Z",
+      "category": "markets",
+      "assets": [],
+      "macro": [],
+      "relevance": 54,
+      "reason": "contexto de mercado"
+    },
+    {
+      "title": "Better International ETF : the iShares IEFA vs . State Street SPDW",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/better-international-etf-ishares-iefa-212001961.html",
+      "domain": "finance.yahoo.com",
+      "source_country": "United States",
+      "language": "English",
+      "published_at": "2026-08-29T22:00:00Z",
+      "category": "markets",
+      "assets": [],
+      "macro": [],
+      "relevance": 54,
+      "reason": "incluye un catalizador relevante"
+    },
+    {
+      "title": "New to The Street Broadcasting Today at 6 : 30 PM EST on Bloomberg Television Across the U . S ., Latin America and MENA - Featuring FreeCast ( NASDAQ : CAST ), Metaterra Holdings ( MTHI ) and SafeSpace Global ( SGCC )",
+      "url": "http://www.californiatelegraph.com/news/279273246/new-to-the-street-broadcasting-today-at-630-pm-est-on-bloomberg-television-across-the-us-latin-america-and-mena-featuring-freecast-nasdaq-cast-metaterra-holdings-mthi-and-safespace-global-sgcc",
+      "domain": "californiatelegraph.com",
+      "source_country": "United States",
+      "language": "English",
+      "published_at": "2026-08-29T18:45:00Z",
+      "category": "stocks",
+      "assets": [
+        "^NDX",
+        "META"
+      ],
+      "macro": [],
+      "relevance": 54,
+      "reason": "activos: ^NDX, META"
     },
     {
       "title": "Can Bitcoin Reach $1 Million by 2030 ? One Crypto Leader Is Skeptical .",
@@ -91,7 +369,7 @@
         "BTC-USD"
       ],
       "macro": [],
-      "relevance": 55,
+      "relevance": 53,
       "reason": "activos: BTC-USD"
     },
     {
@@ -106,88 +384,70 @@
         "BTC-USD"
       ],
       "macro": [],
-      "relevance": 55,
+      "relevance": 53,
       "reason": "activos: BTC-USD"
     },
     {
-      "title": "New to The Street Broadcasting Today at 6 : 30 PM EST on Bloomberg Television Across the U . S ., Latin America and MENA - Featuring FreeCast ( NASDAQ : CAST ), Metaterra Holdings ( MTHI ) and SafeSpace Global ( SGCC )",
-      "url": "http://www.hawaiitelegraph.com/news/279273246/new-to-the-street-broadcasting-today-at-630-pm-est-on-bloomberg-television-across-the-us-latin-america-and-mena-featuring-freecast-nasdaq-cast-metaterra-holdings-mthi-and-safespace-global-sgcc",
-      "domain": "hawaiitelegraph.com",
-      "source_country": "United States",
-      "language": "English",
-      "published_at": "2026-08-29T17:15:00Z",
-      "category": "stocks",
-      "assets": [
-        "^NDX",
-        "META"
-      ],
-      "macro": [],
-      "relevance": 54,
-      "reason": "activos: ^NDX, META"
-    },
-    {
-      "title": "From crypto bets to SIPs , young India finds its money habit",
-      "url": "https://economictimes.indiatimes.com/industry/banking/finance/from-crypto-bets-to-sips-young-india-finds-its-money-habit/articleshow/133622295.cms",
+      "title": "GDP data , crude prices among 7 factors likely to steer D - Street this week",
+      "url": "https://economictimes.indiatimes.com/markets/stocks/news/gdp-data-crude-prices-among-7-factors-likely-to-steer-d-street-this-week/articleshow/133622736.cms",
       "domain": "economictimes.indiatimes.com",
       "source_country": "India",
       "language": "English",
-      "published_at": "2026-08-30T04:15:00Z",
-      "category": "crypto",
-      "assets": [
-        "BTC-USD"
-      ],
-      "macro": [],
-      "relevance": 52,
-      "reason": "activos: BTC-USD"
-    },
-    {
-      "title": "Is Crypto Recovering ? BTC Holds Near $80K as ETF Inflows Surge",
-      "url": "https://partners.coinspeaker.com/is-crypto-recovering-bitcoin-holds-near-80k-as-etf-inflows-surge-and-liquidchain-nears-1m",
-      "domain": "partners.coinspeaker.com",
-      "source_country": "United States",
-      "language": "English",
-      "published_at": "2026-08-29T16:00:00Z",
-      "category": "crypto",
-      "assets": [
-        "BTC-USD"
-      ],
-      "macro": [],
-      "relevance": 52,
-      "reason": "activos: BTC-USD · incluye un catalizador relevante"
-    },
-    {
-      "title": "Reorientarea capitalului global către obligațiuni , energie și infrastructură pune presiune pe finanțarea României",
-      "url": "https://business24.ro/piete-financiare/reorientare-capital-global-obligatiuni-energie-infrastructura-finantare-romania-1665640",
-      "domain": "business24.ro",
-      "source_country": "Romania",
-      "language": "Romanian",
-      "published_at": "2026-08-30T14:00:00Z",
-      "category": "crypto",
+      "published_at": "2026-08-30T04:45:00Z",
+      "category": "macro",
       "assets": [],
-      "macro": [],
-      "relevance": 51,
-      "reason": "contexto de mercado"
+      "macro": [
+        "PIB"
+      ],
+      "relevance": 53,
+      "reason": "macro: PIB · incluye un catalizador relevante"
     },
     {
-      "title": "Investment tax changes imminent as details of State savings scheme due this week",
-      "url": "https://www.irishtimes.com/politics/2026/08/30/investment-tax-changes-imminent-as-details-of-state-savings-scheme-due-this-week/",
-      "domain": "irishtimes.com",
-      "source_country": "Ireland",
-      "language": "English",
-      "published_at": "2026-08-30T13:00:00Z",
-      "category": "crypto",
-      "assets": [],
-      "macro": [],
-      "relevance": 51,
-      "reason": "contexto de mercado"
-    },
-    {
-      "title": "Alex Gerko takes home almost £1bn as trading firm cashes in on volatility",
-      "url": "https://finance.yahoo.com/markets/stocks/articles/alex-gerko-takes-home-almost-161612457.html",
+      "title": "Stock Market Today , Aug . 28 : PayPal Falls 13 % After Stripe and Advent Abandon $50B Takeover",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/stock-market-today-aug-28-210044860.html",
       "domain": "finance.yahoo.com",
       "source_country": "United States",
       "language": "English",
-      "published_at": "2026-08-29T17:45:00Z",
+      "published_at": "2026-08-30T04:15:00Z",
+      "category": "markets",
+      "assets": [],
+      "macro": [],
+      "relevance": 52,
+      "reason": "contexto de mercado"
+    },
+    {
+      "title": "Bull Market or Bear Market : The Real Difference Is What You Do Next",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/bull-market-bear-market-real-200500938.html",
+      "domain": "finance.yahoo.com",
+      "source_country": "United States",
+      "language": "English",
+      "published_at": "2026-08-30T03:00:00Z",
+      "category": "markets",
+      "assets": [],
+      "macro": [],
+      "relevance": 52,
+      "reason": "contexto de mercado"
+    },
+    {
+      "title": "Investment Corner : International stocks showing strength",
+      "url": "https://www.tahoedailytribune.com/news/investment-corner-international-stocks-showing-strength/",
+      "domain": "tahoedailytribune.com",
+      "source_country": "United States",
+      "language": "English",
+      "published_at": "2026-08-30T18:00:00Z",
+      "category": "markets",
+      "assets": [],
+      "macro": [],
+      "relevance": 51,
+      "reason": "contexto de mercado"
+    },
+    {
+      "title": "PGA Polymarket referral code  ROCKY  extends $20 trading bonus to TOUR Championship Day 4 live odds",
+      "url": "https://www.rockytopinsider.com/2026/08/30/pga-polymarket-referral-code-rocky-extends-20-trading-bonus-to-tour-championship-day-4-live-odds/",
+      "domain": "rockytopinsider.com",
+      "source_country": "United States",
+      "language": "English",
+      "published_at": "2026-08-30T16:15:00Z",
       "category": "crypto",
       "assets": [],
       "macro": [],
@@ -195,76 +455,73 @@
       "reason": "contexto de mercado"
     },
     {
-      "title": "Pakistan sets up Crypto Regulatory System in Record Time for Just $200 , 000 : PVARA chief",
-      "url": "https://en.dailypakistan.com.pk/29-Aug-2026/pakistan-sets-up-crypto-regulatory-system-in-record-time-for-just-200000-pvara-chief",
-      "domain": "en.dailypakistan.com.pk",
-      "source_country": "Pakistan",
-      "language": "English",
-      "published_at": "2026-08-29T18:45:00Z",
-      "category": "crypto",
-      "assets": [
-        "BTC-USD"
-      ],
-      "macro": [],
-      "relevance": 48,
-      "reason": "activos: BTC-USD"
-    },
-    {
-      "title": "1300만명 코인 과세 … 이대로면 폭망하는 이유 [ 최훈길의 뒷담화 ]",
-      "url": "https://www.edaily.co.kr/News/Read?newsId=01095526645552568&mediaCodeNo=257",
-      "domain": "edaily.co.kr",
-      "source_country": "South Korea",
-      "language": "Korean",
-      "published_at": "2026-08-29T22:15:00Z",
-      "category": "crypto",
-      "assets": [],
-      "macro": [],
-      "relevance": 43,
-      "reason": "contexto de mercado"
-    },
-    {
-      "title": "Top Infrastructure Stocks To Consider – August 29th",
-      "url": "https://www.tickerreport.com/banking-finance/13565509/top-infrastructure-stocks-to-consider-august-29th.html",
+      "title": "Forum Energy Technologies ( NYSE : FET ) & Precision Drilling ( NYSE : PDS ) Financial Contrast",
+      "url": "https://www.tickerreport.com/banking-finance/13566582/forum-energy-technologies-nysefet-precision-drilling-nysepds-financial-contrast.html",
       "domain": "tickerreport.com",
       "source_country": "United States",
       "language": "English",
-      "published_at": "2026-08-29T21:00:00Z",
-      "category": "crypto",
+      "published_at": "2026-08-30T16:15:00Z",
+      "category": "markets",
       "assets": [],
       "macro": [],
-      "relevance": 43,
+      "relevance": 50,
       "reason": "contexto de mercado"
     },
     {
-      "title": "HDFC Bank CEO Sashidhar Jagdishan to step down after term ends in October",
-      "url": "https://www.livemint.com/companies/news/hdfc-bank-ceo-sashidhar-jagdishan-to-step-down-after-term-ends-in-october-11788007166302.html",
-      "domain": "livemint.com",
+      "title": "Bull Markets Rise , Bear Markets Fall : Here How I Use Each to Build Wealth",
+      "url": "https://www.aol.com/articles/bull-markets-rise-bear-markets-145000000.html",
+      "domain": "aol.com",
+      "source_country": "United States",
+      "language": "English",
+      "published_at": "2026-08-30T16:00:00Z",
+      "category": "markets",
+      "assets": [],
+      "macro": [],
+      "relevance": 50,
+      "reason": "contexto de mercado"
+    },
+    {
+      "title": "USD / CAD Rallies as Wheat and Soybeans Break Out",
+      "url": "https://www.dailyforex.com/forex-technical-analysis/2026/08/weekly-pairs-in-focus-from-31st-august-to-4th-september-2026/249128",
+      "domain": "dailyforex.com",
+      "source_country": "United Kingdom",
+      "language": "English",
+      "published_at": "2026-08-30T15:30:00Z",
+      "category": "crypto",
+      "assets": [],
+      "macro": [],
+      "relevance": 50,
+      "reason": "contexto de mercado"
+    },
+    {
+      "title": "US equities may withstand higher yields as growth , AI and strong balance sheets cushion valuations : Emkay",
+      "url": "https://news.webindia123.com/news/Articles/Business/20260830/4492502.html",
+      "domain": "news.webindia123.com",
       "source_country": "India",
       "language": "English",
-      "published_at": "2026-08-29T17:45:00Z",
-      "category": "crypto",
+      "published_at": "2026-08-30T15:30:00Z",
+      "category": "markets",
       "assets": [],
       "macro": [],
-      "relevance": 42,
+      "relevance": 50,
       "reason": "contexto de mercado"
     },
     {
-      "title": "Snart lanseras digitala valutan",
-      "url": "https://www.svd.se/a/Gxqdv9/snart-lanseras-bankens-digitala-valuta",
-      "domain": "svd.se",
-      "source_country": "Sweden",
-      "language": "Swedish",
-      "published_at": "2026-08-29T16:30:00Z",
-      "category": "crypto",
+      "title": "Analyzing DCC ( OTCMKTS : DCCPF ) and Brady ( NYSE : BRC )",
+      "url": "https://www.themarketsdaily.com/2026/08/30/analyzing-dcc-otcmktsdccpf-and-brady-nysebrc.html",
+      "domain": "themarketsdaily.com",
+      "source_country": "United States",
+      "language": "English",
+      "published_at": "2026-08-30T15:15:00Z",
+      "category": "markets",
       "assets": [],
       "macro": [],
-      "relevance": 42,
+      "relevance": 50,
       "reason": "contexto de mercado"
     }
   ],
   "errors": [
-    "macro: URLError: <urlopen error _ssl.c:993: The handshake operation timed out>",
-    "indices: URLError: <urlopen error _ssl.c:993: The handshake operation timed out>",
-    "stocks: URLError: <urlopen error timed out>"
+    "macro: URLError: <urlopen error timed out>",
+    "stocks: URLError: <urlopen error _ssl.c:993: The handshake operation timed out>"
   ]
 }
