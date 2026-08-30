@@ -1,154 +1,113 @@
 {
-  "generated_at": "2026-08-29T23:22:17.936799Z",
+  "generated_at": "2026-08-30T14:25:51.855726Z",
   "source": "GDELT DOC 2.0",
   "horizon_hours": 24,
-  "article_count": 36,
+  "article_count": 18,
   "articles": [
     {
-      "title": "Peterson Institute Posen : It fine for the Fed not to give forward guidance , but a forecast is critical",
-      "url": "https://finance.yahoo.com/economy/article/peterson-institutes-posen-its-fine-for-the-fed-not-to-give-forward-guidance-but-a-forecast-is-critical-170758706.html",
+      "title": "Why Metaplanet ( TSE : 3350 ) Is Up 13 . 1 % After Launching a U . S . Bitcoin Treasury Vehicle",
+      "url": "https://finance.yahoo.com/markets/crypto/articles/why-metaplanet-tse-3350-13-050426549.html",
       "domain": "finance.yahoo.com",
       "source_country": "United States",
       "language": "English",
-      "published_at": "2026-08-29T17:45:00Z",
-      "category": "macro",
+      "published_at": "2026-08-30T06:00:00Z",
+      "category": "stocks",
+      "assets": [
+        "BTC-USD",
+        "META"
+      ],
+      "macro": [],
+      "relevance": 67,
+      "reason": "activos: BTC-USD, META"
+    },
+    {
+      "title": "Stocks Fall as Hawkish Warsh Boosts Fed Rate Hike Chances",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/stocks-fall-hawkish-warsh-boosts-204141504.html",
+      "domain": "finance.yahoo.com",
+      "source_country": "United States",
+      "language": "English",
+      "published_at": "2026-08-30T03:30:00Z",
+      "category": "crypto",
       "assets": [],
-      "macro": [
-        "Fed"
-      ],
-      "relevance": 69,
-      "reason": "macro: Fed · incluye un catalizador relevante"
-    },
-    {
-      "title": "Nvidia Is Getting Bigger Without Getting Expensive",
-      "url": "https://finance.yahoo.com/markets/stocks/articles/nvidia-getting-bigger-without-getting-153002917.html",
-      "domain": "finance.yahoo.com",
-      "source_country": "United States",
-      "language": "English",
-      "published_at": "2026-08-29T22:00:00Z",
-      "category": "stocks",
-      "assets": [
-        "NVDA"
-      ],
-      "macro": [],
-      "relevance": 65,
-      "reason": "activos: NVDA"
-    },
-    {
-      "title": "EXCLUSIVE : God Bless America ETF Exec Says Nvidia Wins No Matter Who Leads AI Race :  Pioneers Die With Arrows in Their Backs",
-      "url": "https://finance.yahoo.com/technology/ai/articles/exclusive-god-bless-america-etf-094530579.html",
-      "domain": "finance.yahoo.com",
-      "source_country": "United States",
-      "language": "English",
-      "published_at": "2026-08-29T11:30:00Z",
-      "category": "stocks",
-      "assets": [
-        "NVDA"
-      ],
-      "macro": [],
-      "relevance": 64,
-      "reason": "activos: NVDA · incluye un catalizador relevante"
-    },
-    {
-      "title": "US stocks drift lower after expectations rise for the Fed to hike rates to get handle on inflation",
-      "url": "https://www.ksl.com:443/article/51617205/us-stocks-drift-lower-after-expectations-rise-for-the-fed-to-hike-rates-to-get-handle-on-inflation",
-      "domain": "ksl.com",
-      "source_country": "United States",
-      "language": "English",
-      "published_at": "2026-08-28T23:45:00Z",
-      "category": "macro",
-      "assets": [
-        "^GSPC"
-      ],
       "macro": [
         "Fed",
-        "Inflación",
         "Tipos"
       ],
-      "relevance": 64,
-      "reason": "activos: ^GSPC · macro: Fed, Inflación, Tipos · incluye un catalizador relevante"
+      "relevance": 66,
+      "reason": "macro: Fed, Tipos · incluye un catalizador relevante"
     },
     {
-      "title": "AST SpaceMobile ( NASDAQ : ASTS ) Stock Slides 15 . 5 % As Rate Hike Fears Grip Interest - Sensitive Growth Stocks",
-      "url": "https://www.foreignpolicyjournal.com/2026/08/29/ast-spacemobile-nasdaq-asts-stock-slides-15-5-as-rate-hike-fears-grip-interest-sensitive-growth-stocks/",
-      "domain": "foreignpolicyjournal.com",
-      "source_country": "Israel",
-      "language": "English",
-      "published_at": "2026-08-29T18:45:00Z",
-      "category": "macro",
-      "assets": [
-        "^NDX"
-      ],
-      "macro": [
-        "Tipos"
-      ],
-      "relevance": 63,
-      "reason": "activos: ^NDX · macro: Tipos · incluye un catalizador relevante"
-    },
-    {
-      "title": "Marvell Technology shares fall despite Q2 earnings beat and higher revenue outlook",
-      "url": "https://finance.yahoo.com/markets/stocks/articles/marvell-technology-shares-fall-despite-101806855.html",
+      "title": "Coinbase ( COIN ) Q2 Revenue Fell , but Its Diversification Story Got Stronger",
+      "url": "https://finance.yahoo.com/markets/crypto/articles/coinbase-coin-q2-revenue-fell-203957155.html",
       "domain": "finance.yahoo.com",
       "source_country": "United States",
       "language": "English",
-      "published_at": "2026-08-29T12:15:00Z",
-      "category": "markets",
+      "published_at": "2026-08-30T03:00:00Z",
+      "category": "crypto",
       "assets": [],
       "macro": [],
-      "relevance": 62,
+      "relevance": 58,
       "reason": "incluye un catalizador relevante"
     },
     {
-      "title": "Wall Street Week Ahead : Jobs report , Broadcom results pose next hurdles for stock market rally",
-      "url": "https://economictimes.indiatimes.com/markets/us-stocks/news/wall-steet-week-ahead-jobs-report-broadcom-results-pose-next-hurdles-for-stock-market-rally/articleshow/133603682.cms",
-      "domain": "economictimes.indiatimes.com",
-      "source_country": "India",
-      "language": "English",
-      "published_at": "2026-08-29T04:45:00Z",
-      "category": "stocks",
+      "title": "Bitcoin - Prognose : Kommt die 100 . 000 - Dollar - Marke 2026 zurück ?",
+      "url": "https://www.finanzen.net/ratgeber/news/bitcoin-ueber-80-000-dollar-kommt-die-100-000er-marke-zurueck-30-08-2026-01/",
+      "domain": "finanzen.net",
+      "source_country": "Germany",
+      "language": "German",
+      "published_at": "2026-08-30T13:45:00Z",
+      "category": "crypto",
       "assets": [
-        "^GSPC",
-        "AVGO"
-      ],
-      "macro": [
-        "Empleo"
-      ],
-      "relevance": 62,
-      "reason": "activos: ^GSPC, AVGO · macro: Empleo · incluye un catalizador relevante"
-    },
-    {
-      "title": "Jim Cramer Explained What Turned The Tide For NVIDIA Corporation ( NASDAQ : NVDA ) Stock",
-      "url": "https://finance.yahoo.com/markets/stocks/articles/jim-cramer-explained-turned-tide-033354732.html",
-      "domain": "finance.yahoo.com",
-      "source_country": "United States",
-      "language": "English",
-      "published_at": "2026-08-29T04:15:00Z",
-      "category": "stocks",
-      "assets": [
-        "^NDX",
-        "NVDA"
+        "BTC-USD"
       ],
       "macro": [],
-      "relevance": 62,
-      "reason": "activos: ^NDX, NVDA"
+      "relevance": 57,
+      "reason": "activos: BTC-USD"
     },
     {
-      "title": "Wall Street Review : Stocks End Week Mixed Amid Strong Nvidia Earnings , Fed Clarity",
-      "url": "https://www.theepochtimes.com/business/wall-street-review-stocks-end-week-mixed-amid-strong-nvidia-earnings-fed-clarity-6080921",
-      "domain": "theepochtimes.com",
+      "title": "Vietnam moves to build safer crypto asset market",
+      "url": "https://news.tuoitre.vn/vietnam-moves-to-build-safer-crypto-asset-market-103260830151638402.htm",
+      "domain": "news.tuoitre.vn",
+      "source_country": "",
+      "language": "English",
+      "published_at": "2026-08-30T12:15:00Z",
+      "category": "crypto",
+      "assets": [
+        "BTC-USD"
+      ],
+      "macro": [],
+      "relevance": 56,
+      "reason": "activos: BTC-USD"
+    },
+    {
+      "title": "Can Bitcoin Reach $1 Million by 2030 ? One Crypto Leader Is Skeptical .",
+      "url": "https://www.fool.com/investing/2026/08/30/can-bitcoin-reach-1-million-by-2030-one-crypto-lea/",
+      "domain": "fool.com",
       "source_country": "United States",
       "language": "English",
-      "published_at": "2026-08-29T01:30:00Z",
-      "category": "stocks",
+      "published_at": "2026-08-30T10:15:00Z",
+      "category": "crypto",
       "assets": [
-        "^GSPC",
-        "NVDA"
+        "BTC-USD"
       ],
-      "macro": [
-        "Fed"
+      "macro": [],
+      "relevance": 55,
+      "reason": "activos: BTC-USD"
+    },
+    {
+      "title": "Coinbase Is Adding Perpetual Futures to Its Base App . Here What Crypto Investors Need to Know .",
+      "url": "https://www.fool.com/investing/2026/08/30/coinbase-is-adding-perpetual-futures-to-its-base-a/",
+      "domain": "fool.com",
+      "source_country": "United States",
+      "language": "English",
+      "published_at": "2026-08-30T10:15:00Z",
+      "category": "crypto",
+      "assets": [
+        "BTC-USD"
       ],
-      "relevance": 62,
-      "reason": "activos: ^GSPC, NVDA · macro: Fed · incluye un catalizador relevante"
+      "macro": [],
+      "relevance": 55,
+      "reason": "activos: BTC-USD"
     },
     {
       "title": "New to The Street Broadcasting Today at 6 : 30 PM EST on Bloomberg Television Across the U . S ., Latin America and MENA - Featuring FreeCast ( NASDAQ : CAST ), Metaterra Holdings ( MTHI ) and SafeSpace Global ( SGCC )",
@@ -163,53 +122,22 @@
         "META"
       ],
       "macro": [],
-      "relevance": 60,
+      "relevance": 54,
       "reason": "activos: ^NDX, META"
     },
     {
-      "title": "Warsh inflation warning sets up September showdown for the Fed",
-      "url": "https://www.thehindubusinessline.com/portfolio/mutual-funds/warshs-inflation-warning-sets-up-september-showdown-for-the-fed/article71405107.ece",
-      "domain": "thehindubusinessline.com",
+      "title": "From crypto bets to SIPs , young India finds its money habit",
+      "url": "https://economictimes.indiatimes.com/industry/banking/finance/from-crypto-bets-to-sips-young-india-finds-its-money-habit/articleshow/133622295.cms",
+      "domain": "economictimes.indiatimes.com",
       "source_country": "India",
       "language": "English",
-      "published_at": "2026-08-29T16:00:00Z",
-      "category": "macro",
-      "assets": [],
-      "macro": [
-        "Fed",
-        "Inflación"
-      ],
-      "relevance": 60,
-      "reason": "macro: Fed, Inflación · incluye un catalizador relevante"
-    },
-    {
-      "title": "Nvidia jumps as 70 % revenue forecast fuels broader chip rally",
-      "url": "http://www.afghanistansun.com/news/279269599/nvidia-jumps-as-70-revenue-forecast-fuels-broader-chip-rally",
-      "domain": "afghanistansun.com",
-      "source_country": "Afghanistan",
-      "language": "English",
-      "published_at": "2026-08-29T12:30:00Z",
-      "category": "stocks",
-      "assets": [
-        "NVDA"
-      ],
-      "macro": [],
-      "relevance": 60,
-      "reason": "activos: NVDA · incluye un catalizador relevante"
-    },
-    {
-      "title": "Why Warsh First Jackson Hole Speech Could Decide the Next Bitcoin Move",
-      "url": "https://finance.yahoo.com/markets/crypto/articles/why-warsh-first-jackson-hole-101752785.html",
-      "domain": "finance.yahoo.com",
-      "source_country": "United States",
-      "language": "English",
-      "published_at": "2026-08-29T12:15:00Z",
+      "published_at": "2026-08-30T04:15:00Z",
       "category": "crypto",
       "assets": [
         "BTC-USD"
       ],
       "macro": [],
-      "relevance": 60,
+      "relevance": 52,
       "reason": "activos: BTC-USD"
     },
     {
@@ -224,86 +152,34 @@
         "BTC-USD"
       ],
       "macro": [],
-      "relevance": 58,
+      "relevance": 52,
       "reason": "activos: BTC-USD · incluye un catalizador relevante"
     },
     {
-      "title": "Economics 101 : Oil , inflation and the Federal Reserve - Medicine Hat NewsMedicine Hat News",
-      "url": "https://medicinehatnews.com/commentary/opinions/2026/08/29/economics-101-oil-inflation-and-the-federal-reserve/",
-      "domain": "medicinehatnews.com",
-      "source_country": "United States",
-      "language": "English",
-      "published_at": "2026-08-29T12:15:00Z",
-      "category": "macro",
+      "title": "Reorientarea capitalului global către obligațiuni , energie și infrastructură pune presiune pe finanțarea României",
+      "url": "https://business24.ro/piete-financiare/reorientare-capital-global-obligatiuni-energie-infrastructura-finantare-romania-1665640",
+      "domain": "business24.ro",
+      "source_country": "Romania",
+      "language": "Romanian",
+      "published_at": "2026-08-30T14:00:00Z",
+      "category": "crypto",
       "assets": [],
-      "macro": [
-        "Fed",
-        "Inflación"
-      ],
-      "relevance": 58,
-      "reason": "macro: Fed, Inflación · incluye un catalizador relevante"
-    },
-    {
-      "title": "After Surging 3 , 110 %, Has Sandisk Already Had Its  Nvidia Moment ?",
-      "url": "https://finance.yahoo.com/markets/stocks/articles/surging-3-110-sandisk-already-032000950.html",
-      "domain": "finance.yahoo.com",
-      "source_country": "United States",
-      "language": "English",
-      "published_at": "2026-08-29T08:15:00Z",
-      "category": "stocks",
-      "assets": [
-        "NVDA"
-      ],
       "macro": [],
-      "relevance": 58,
-      "reason": "activos: NVDA"
+      "relevance": 51,
+      "reason": "contexto de mercado"
     },
     {
-      "title": "Inflation data  concerning : Fed chair Warsh signals rates may need to rise",
-      "url": "https://timesofindia.indiatimes.com/business/international-business/inflation-data-concerning-fed-chair-warsh-signals-rates-may-need-to-rise/articleshow/133603111.cms",
-      "domain": "timesofindia.indiatimes.com",
-      "source_country": "India",
+      "title": "Investment tax changes imminent as details of State savings scheme due this week",
+      "url": "https://www.irishtimes.com/politics/2026/08/30/investment-tax-changes-imminent-as-details-of-state-savings-scheme-due-this-week/",
+      "domain": "irishtimes.com",
+      "source_country": "Ireland",
       "language": "English",
-      "published_at": "2026-08-29T04:15:00Z",
-      "category": "macro",
+      "published_at": "2026-08-30T13:00:00Z",
+      "category": "crypto",
       "assets": [],
-      "macro": [
-        "Fed",
-        "Inflación",
-        "Tipos"
-      ],
-      "relevance": 58,
-      "reason": "macro: Fed, Inflación, Tipos · incluye un catalizador relevante"
-    },
-    {
-      "title": "Billionaire Stanley Druckenmiller Sold Broadcom and Bought These Artificial Intelligence ( AI ) Giants Instead",
-      "url": "https://www.fool.com/investing/2026/08/29/billionaire-stanley-druckenmiller-sold-broadcom-an/?source=iedfolrf0000001",
-      "domain": "fool.com",
-      "source_country": "United States",
-      "language": "English",
-      "published_at": "2026-08-29T22:00:00Z",
-      "category": "stocks",
-      "assets": [
-        "AVGO"
-      ],
       "macro": [],
-      "relevance": 57,
-      "reason": "activos: AVGO"
-    },
-    {
-      "title": "Cooling US Inflation Gives Markets Breathing Room But Treasury Concerns Persist",
-      "url": "https://www.foreignpolicyjournal.com/2026/08/29/cooling-us-inflation-gives-markets-breathing-room-but-treasury-concerns-persist/",
-      "domain": "foreignpolicyjournal.com",
-      "source_country": "Israel",
-      "language": "English",
-      "published_at": "2026-08-29T18:45:00Z",
-      "category": "macro",
-      "assets": [],
-      "macro": [
-        "Inflación"
-      ],
-      "relevance": 57,
-      "reason": "macro: Inflación · incluye un catalizador relevante"
+      "relevance": 51,
+      "reason": "contexto de mercado"
     },
     {
       "title": "Alex Gerko takes home almost £1bn as trading firm cashes in on volatility",
@@ -315,175 +191,8 @@
       "category": "crypto",
       "assets": [],
       "macro": [],
-      "relevance": 57,
+      "relevance": 50,
       "reason": "contexto de mercado"
-    },
-    {
-      "title": "BitGo Acquires NYDIG Trading Business to Expand Institutional Crypto Platform",
-      "url": "https://finance.yahoo.com/markets/crypto/articles/bitgo-acquires-nydig-trading-business-232300966.html",
-      "domain": "finance.yahoo.com",
-      "source_country": "United States",
-      "language": "English",
-      "published_at": "2026-08-29T05:45:00Z",
-      "category": "crypto",
-      "assets": [
-        "BTC-USD"
-      ],
-      "macro": [],
-      "relevance": 57,
-      "reason": "activos: BTC-USD"
-    },
-    {
-      "title": "Why Im Still Holding Nvidia ( NVDA ) Stock Despite Its Sky - High P / E Ratio",
-      "url": "https://www.aol.com/articles/why-im-still-holding-nvidia-182000000.html",
-      "domain": "aol.com",
-      "source_country": "United States",
-      "language": "English",
-      "published_at": "2026-08-29T19:45:00Z",
-      "category": "stocks",
-      "assets": [
-        "NVDA"
-      ],
-      "macro": [],
-      "relevance": 56,
-      "reason": "activos: NVDA"
-    },
-    {
-      "title": "Nvidia forecast lifts chip stocks as AI spending fears ease",
-      "url": "http://www.laosnews.net/news/279269599/nvidia-forecast-lifts-chip-stocks-as-ai-spending-fears-ease",
-      "domain": "laosnews.net",
-      "source_country": "United States",
-      "language": "English",
-      "published_at": "2026-08-29T12:30:00Z",
-      "category": "stocks",
-      "assets": [
-        "NVDA"
-      ],
-      "macro": [],
-      "relevance": 56,
-      "reason": "activos: NVDA · incluye un catalizador relevante"
-    },
-    {
-      "title": "Precious metals under pressure due to US Fed hawkish stance ; gold fell 0 . 64 and silver slipped 1 . 12 in a week , Delhi News in Hindi",
-      "url": "https://www.khaskhabar.com/local/delhi-ncr/delhi-news/news-precious-metals-under-pressure-due-to-us-fed-hawkish-stance-gold-fell-064-and-silver-slipped-112-in-a-week-news-hindi-1-840467-KKN.html",
-      "domain": "khaskhabar.com",
-      "source_country": "India",
-      "language": "Hindi",
-      "published_at": "2026-08-29T12:15:00Z",
-      "category": "stocks",
-      "assets": [
-        "META"
-      ],
-      "macro": [
-        "Fed"
-      ],
-      "relevance": 56,
-      "reason": "activos: META · macro: Fed"
-    },
-    {
-      "title": "US Fed Rate Hike : अमेरिकी ब्याज दरों में बढ़ोतरी की उम्मीदों से सोमवार को सोने और शेयर मार्केट में बड़े फेरबदल की आशंका , जानें एक्सपर्ट्स की राय",
-      "url": "https://www.patrika.com/business-news/gold-price-may-fall-us-fed-rate-hike-kevin-warsh-speech-20867895",
-      "domain": "patrika.com",
-      "source_country": "India",
-      "language": "Hindi",
-      "published_at": "2026-08-29T08:45:00Z",
-      "category": "macro",
-      "assets": [],
-      "macro": [
-        "Fed",
-        "Tipos"
-      ],
-      "relevance": 56,
-      "reason": "macro: Fed, Tipos · incluye un catalizador relevante"
-    },
-    {
-      "title": "Bill Ackman Just Made His Biggest Portfolio Overhaul in Years , Adding Netflix , Visa , and Mastercard to Pershing Square . What the Thesis Behind the Switch ?",
-      "url": "https://finance.yahoo.com/markets/stocks/articles/bill-ackman-just-made-biggest-042000548.html",
-      "domain": "finance.yahoo.com",
-      "source_country": "United States",
-      "language": "English",
-      "published_at": "2026-08-29T08:45:00Z",
-      "category": "markets",
-      "assets": [],
-      "macro": [],
-      "relevance": 56,
-      "reason": "incluye un catalizador relevante"
-    },
-    {
-      "title": "BlackRock helps pull more Bitcoin wealth deeper into Wall Street",
-      "url": "https://economictimes.indiatimes.com/markets/cryptocurrency/blackrock-helps-pull-more-bitcoin-wealth-deeper-into-wall-street/articleshow/133607321.cms",
-      "domain": "economictimes.indiatimes.com",
-      "source_country": "India",
-      "language": "English",
-      "published_at": "2026-08-29T08:15:00Z",
-      "category": "crypto",
-      "assets": [
-        "BTC-USD",
-        "^GSPC"
-      ],
-      "macro": [],
-      "relevance": 56,
-      "reason": "activos: BTC-USD, ^GSPC"
-    },
-    {
-      "title": "Coinbase and Robinhood Rally as Bitcoin Marches Toward Its Best Week in Months",
-      "url": "https://finance.yahoo.com/markets/crypto/articles/coinbase-robinhood-rally-bitcoin-marches-035923976.html",
-      "domain": "finance.yahoo.com",
-      "source_country": "United States",
-      "language": "English",
-      "published_at": "2026-08-29T04:30:00Z",
-      "category": "crypto",
-      "assets": [
-        "BTC-USD"
-      ],
-      "macro": [],
-      "relevance": 56,
-      "reason": "activos: BTC-USD"
-    },
-    {
-      "title": "AppLovin vs . Alphabet : Which High - Growth Digital Media Stock Is the Better Investment in 2026 ?",
-      "url": "https://finance.yahoo.com/media-advertising/articles/applovin-vs-alphabet-high-growth-021135202.html",
-      "domain": "finance.yahoo.com",
-      "source_country": "United States",
-      "language": "English",
-      "published_at": "2026-08-29T02:45:00Z",
-      "category": "stocks",
-      "assets": [
-        "GOOGL"
-      ],
-      "macro": [],
-      "relevance": 56,
-      "reason": "activos: GOOGL"
-    },
-    {
-      "title": "Strive ( ASST ) Increased Bitcoin Holdings 5 . 5 %, but Bitcoin per Assumed Diluted Share Rose Just 1 . 3 %. Is the Treasury Strategy Creating Value ?",
-      "url": "https://finance.yahoo.com/markets/crypto/articles/strive-asst-increased-bitcoin-holdings-200548334.html",
-      "domain": "finance.yahoo.com",
-      "source_country": "United States",
-      "language": "English",
-      "published_at": "2026-08-29T02:30:00Z",
-      "category": "crypto",
-      "assets": [
-        "BTC-USD"
-      ],
-      "macro": [],
-      "relevance": 56,
-      "reason": "activos: BTC-USD"
-    },
-    {
-      "title": "Bitcoin is having a great month but Solana is doing even better as coin soars above $100",
-      "url": "https://finance.yahoo.com/markets/crypto/articles/bitcoin-having-great-month-solana-184910512.html",
-      "domain": "finance.yahoo.com",
-      "source_country": "United States",
-      "language": "English",
-      "published_at": "2026-08-29T02:00:00Z",
-      "category": "crypto",
-      "assets": [
-        "BTC-USD"
-      ],
-      "macro": [],
-      "relevance": 56,
-      "reason": "activos: BTC-USD"
     },
     {
       "title": "Pakistan sets up Crypto Regulatory System in Record Time for Just $200 , 000 : PVARA chief",
@@ -497,65 +206,65 @@
         "BTC-USD"
       ],
       "macro": [],
-      "relevance": 55,
+      "relevance": 48,
       "reason": "activos: BTC-USD"
     },
     {
-      "title": "BitGo Buys NYDIG Institutional Trading Arm to Beef Up Derivatives and Financing",
-      "url": "https://finance.yahoo.com/markets/crypto/articles/bitgo-buys-nydigs-institutional-trading-133104447.html",
-      "domain": "finance.yahoo.com",
-      "source_country": "United States",
-      "language": "English",
-      "published_at": "2026-08-29T14:15:00Z",
+      "title": "1300만명 코인 과세 … 이대로면 폭망하는 이유 [ 최훈길의 뒷담화 ]",
+      "url": "https://www.edaily.co.kr/News/Read?newsId=01095526645552568&mediaCodeNo=257",
+      "domain": "edaily.co.kr",
+      "source_country": "South Korea",
+      "language": "Korean",
+      "published_at": "2026-08-29T22:15:00Z",
       "category": "crypto",
       "assets": [],
       "macro": [],
-      "relevance": 55,
+      "relevance": 43,
       "reason": "contexto de mercado"
     },
     {
-      "title": "Bank of America sends strong message to stock market investors",
-      "url": "https://finance.yahoo.com/markets/stocks/articles/bank-america-sends-strong-message-130300264.html",
-      "domain": "finance.yahoo.com",
+      "title": "Top Infrastructure Stocks To Consider – August 29th",
+      "url": "https://www.tickerreport.com/banking-finance/13565509/top-infrastructure-stocks-to-consider-august-29th.html",
+      "domain": "tickerreport.com",
       "source_country": "United States",
       "language": "English",
-      "published_at": "2026-08-29T13:45:00Z",
-      "category": "markets",
+      "published_at": "2026-08-29T21:00:00Z",
+      "category": "crypto",
       "assets": [],
       "macro": [],
-      "relevance": 55,
+      "relevance": 43,
       "reason": "contexto de mercado"
     },
     {
-      "title": "The U . S . Took the Tech Lead From China . Trump New Chip Tariffs Could Hand It Back",
-      "url": "https://247wallst.com/investing/2026/08/29/the-u-s-took-the-tech-lead-from-china-trumps-new-chip-tariffs-could-hand-it-back/",
-      "domain": "247wallst.com",
-      "source_country": "United States",
+      "title": "HDFC Bank CEO Sashidhar Jagdishan to step down after term ends in October",
+      "url": "https://www.livemint.com/companies/news/hdfc-bank-ceo-sashidhar-jagdishan-to-step-down-after-term-ends-in-october-11788007166302.html",
+      "domain": "livemint.com",
+      "source_country": "India",
       "language": "English",
-      "published_at": "2026-08-29T12:45:00Z",
-      "category": "macro",
-      "assets": [],
-      "macro": [
-        "Aranceles"
-      ],
-      "relevance": 54,
-      "reason": "macro: Aranceles · incluye un catalizador relevante"
-    },
-    {
-      "title": "Why Veeva Systems Stock Is Soaring This Week",
-      "url": "https://finance.yahoo.com/markets/stocks/articles/why-veeva-systems-stock-soaring-101635318.html",
-      "domain": "finance.yahoo.com",
-      "source_country": "United States",
-      "language": "English",
-      "published_at": "2026-08-29T12:15:00Z",
-      "category": "markets",
+      "published_at": "2026-08-29T17:45:00Z",
+      "category": "crypto",
       "assets": [],
       "macro": [],
-      "relevance": 54,
+      "relevance": 42,
+      "reason": "contexto de mercado"
+    },
+    {
+      "title": "Snart lanseras digitala valutan",
+      "url": "https://www.svd.se/a/Gxqdv9/snart-lanseras-bankens-digitala-valuta",
+      "domain": "svd.se",
+      "source_country": "Sweden",
+      "language": "Swedish",
+      "published_at": "2026-08-29T16:30:00Z",
+      "category": "crypto",
+      "assets": [],
+      "macro": [],
+      "relevance": 42,
       "reason": "contexto de mercado"
     }
   ],
   "errors": [
-    "indices: URLError: <urlopen error _ssl.c:993: The handshake operation timed out>"
+    "macro: URLError: <urlopen error _ssl.c:993: The handshake operation timed out>",
+    "indices: URLError: <urlopen error _ssl.c:993: The handshake operation timed out>",
+    "stocks: URLError: <urlopen error timed out>"
   ]
 }
